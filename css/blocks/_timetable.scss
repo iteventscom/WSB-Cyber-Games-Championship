@@ -1,0 +1,47 @@
+
+
+.timetable {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: -22px;
+  &__item {
+    width: 49%;
+    margin-right: 22px;
+    margin-bottom: 22px;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__table {
+    border: 2px solid $green;
+    &-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 6px 8px;
+
+      &:nth-child(2n) {
+        background-color: $green;
+        color: #000000;
+      }
+    }
+  }
+  &__title {
+    margin-bottom: 10px;
+  }
+  &__date {
+    white-space: nowrap;
+  }
+  &__group {
+    flex: 1;
+    text-align: right;
+    white-space: nowrap;
+  }
+}

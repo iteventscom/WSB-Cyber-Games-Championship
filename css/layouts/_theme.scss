@@ -1,0 +1,58 @@
+$themecolor: #104591; //цвет темы
+$themecolor2: #e73a47; //цвет темы
+
+$grey: #3e3e3e;
+$green: #93c11a;
+$yellow: #f7e126; //Кнопка стандарт
+$button_hover: rgba(19, 21, 47, 1); //Кнопка ховер
+
+$pkAcentBorder: #ff0000;
+$pkAcent: $yellow;
+
+$active-price: #b2bcd4; //декорация позунка
+
+$tableprice: #02adff; //цвет рамки билетов
+$tableprice_bg: rgba(115, 202, 243, 0); // цвет прозрачности рамки
+$tableprice_bg-hover: #fcf5f9; //цвет фона рамки при наведении
+
+.section-title {
+  text-align: center;
+  margin-bottom: 64px;
+  text-transform: uppercase;
+}
+
+.section__title {
+  text-align: left;
+  color: $green;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  margin-bottom: 6px;
+
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: -137px;
+    background-color: $green;
+    width: 120px;
+    height: 2px;
+    transform: translate(0,-50%);
+  }
+}
+.section__subtitle {
+  text-align: left;
+  margin-bottom: 28px;
+  font-size: 21px;
+}
+
+.section--red {
+  background-color: $themecolor2;
+}
+
+.section--bg--blue a {
+  color: white;
+}

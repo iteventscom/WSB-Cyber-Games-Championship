@@ -1,0 +1,35 @@
+.button {
+  // padding: 8px 19px;
+  border: 5px solid $green;
+border-radius: 15px;
+  padding: 8px 8px;
+  background-color: transparent;
+  color: $green;
+  font: normal 14px/1.42 "Open Sans", sans-serif;
+  cursor: pointer;
+  transition: 0.4s;
+  white-space: nowrap;
+  text-align: center;
+
+  &:hover {
+    background-color: $green;
+    color: #000000;
+  }
+}
+
+
+.button__presen {
+  color: #fff;
+  background-color: #114490;
+  font-size: 36px;
+  margin: 0 auto;
+  display: flex;
+  padding: 8px 50px 11px;
+}
+
+.button__speaker {
+  margin: 0px auto 25px;
+  display: flex;
+  font-size: 24px;
+  padding: 8px 19px 11px;
+}
