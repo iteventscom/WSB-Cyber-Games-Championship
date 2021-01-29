@@ -1,0 +1,20 @@
+.about {
+  display: flex;
+  align-items: center;
+  &__img {
+    flex-shrink: 0;
+    width: 377px;
+    height: 226px;
+    overflow: hidden;
+    margin-right: 75px;
+  }
+  &__pic {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  &__description {
+    letter-spacing: 0.24px;
+    line-height: 23px;
+}
+}

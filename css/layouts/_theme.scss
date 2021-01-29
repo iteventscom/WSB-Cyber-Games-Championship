@@ -29,8 +29,7 @@ $tableprice_bg-hover: #fcf5f9; //цвет фона рамки при навед�
   letter-spacing: 0.05em;
   line-height: 1;
   margin-bottom: 6px;
-
-
+  
   &::before {
     content: '';
     position: absolute;
@@ -41,6 +40,9 @@ $tableprice_bg-hover: #fcf5f9; //цвет фона рамки при навед�
     width: 120px;
     height: 2px;
     transform: translate(0,-50%);
+  }
+  &--margin {
+    margin-bottom: 108px;
   }
 }
 .section__subtitle {
