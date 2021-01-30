@@ -421,7 +421,7 @@ h3 {
 
 .section__title {
   text-align: left;
-  color: #93c11a;
+  color: #ffff00;
   text-transform: uppercase;
   position: relative;
   letter-spacing: 0.05em;
@@ -435,7 +435,7 @@ h3 {
   z-index: 10;
   top: 50%;
   left: -137px;
-  background-color: #93c11a;
+  background-color: #ffff00;
   width: 120px;
   height: 2px;
   transform: translate(0, -50%);
@@ -546,6 +546,7 @@ h3 {
 .subjects__item:hover {
   transition: 0.5s;
   margin-top: 0;
+  margin-bottom: 20px;
   background-color: #93c11a;
   color: #000000;
 }
@@ -804,6 +805,274 @@ h3 {
   flex: 1;
   text-align: right;
   white-space: nowrap;
+}
+
+.translations {
+  display: flex;
+  text-align: center;
+}
+
+.translations__item {
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  align-items: center;
+  margin-right: 52px;
+}
+
+.translations__item:last-child {
+  margin-right: 0;
+}
+
+.translations__pic {
+  display: flex;
+  width: 279px;
+  height: 242px;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+
+.translations__img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.translations__title {
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: -0.85px;
+  line-height: 38px;
+  margin-bottom: 4px;
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+}
+
+.translations__subtitle {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.text--green {
+  color: #93c11a;
+}
+
+.text--red {
+  color: #FE4545;
+}
+
+.comand-terms {
+  counter-reset: num;
+}
+
+.comand-terms__item {
+  position: relative;
+  line-height: 1.4;
+  margin-bottom: 21px;
+}
+
+.comand-terms__item:before {
+  content: counter(num);
+  counter-increment: num;
+  display: inline-block;
+  position: absolute;
+  top: 6px;
+  left: -30px;
+  width: 20px;
+  height: 20px;
+  background: #93c11a;
+  color: #000000;
+  text-align: center;
+  line-height: 18px;
+  font-size: 14px;
+}
+
+.places {
+  display: flex;
+  justify-content: space-between;
+}
+
+.places__item {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+}
+
+.places__item--middle-height {
+  margin-top: 98px;
+}
+
+.places__item--little-height {
+  margin-top: 154px;
+}
+
+.places__number {
+  color: #93c11a;
+  font-size: 64px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 66px;
+  line-height: 0;
+}
+
+.places__number--middle-font {
+  font-size: 54px;
+  margin-bottom: 47px;
+}
+
+.places__number--little-font {
+  font-size: 48px;
+  margin-bottom: 47px;
+}
+
+.places__prize {
+  background-color: #93c11a;
+  color: #000000;
+  padding: 16px 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+}
+
+.places__prize-item {
+  margin-left: 24px;
+  position: relative;
+  margin-bottom: 2px;
+  line-height: 1.2;
+}
+
+.places__prize-item:before {
+  position: absolute;
+  content: '';
+  height: 15px;
+  width: 15px;
+  top: 6px;
+  left: -24px;
+  background-color: #000000;
+}
+
+.section__title--with-icon {
+  margin-left: 100px;
+  position: relative;
+}
+
+.section__title--with-icon::before {
+  left: -237px;
+}
+
+.section__title--with-icon::after {
+  position: absolute;
+  display: block;
+  content: url(./../assets/img/cup.svg);
+  width: 79px;
+  left: -98px;
+  top: -28px;
+}
+
+.tickets {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tickets__item {
+  width: 49%;
+  border: 3px solid #93c11a;
+  padding: 3px;
+  border-radius: 0 25px;
+}
+
+.tickets__condition {
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 0 20px 0 0;
+  background-color: #93c11a;
+  color: #000000;
+  margin-bottom: 3px;
+}
+
+.tickets__price {
+  display: flex;
+  margin-bottom: 3px;
+}
+
+.tickets__price-col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-right: 3px solid #93c11a;
+  margin-right: 3px;
+}
+
+.tickets__price-col:last-child {
+  border-right: none;
+  margin-right: 0;
+}
+
+.tickets__price-row {
+  border-bottom: 3px solid #93c11a;
+  width: 100%;
+}
+
+.tickets__price-row:last-child {
+  border-bottom: none;
+}
+
+.tickets__price-summ {
+  color: #93c11a;
+  font-weight: 700;
+  font-size: 54px;
+}
+
+.tickets__price-summ--small-font {
+  font-size: 36px;
+}
+
+.tickets__price-team {
+  margin-bottom: 13px;
+}
+
+.tickets__price-team--small-font {
+  font-size: 18px;
+}
+
+.btn {
+  display: block;
+  color: #000000;
+  background-color: #93c11a;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 28px;
+  border-radius: 0 0 0 20px;
+  padding: 26px 0;
+}
+
+.btn--buy {
+  width: 100%;
+  border: 3px solid #93c11a;
+}
+
+.btn--buy:hover {
+  background-color: #ffff00;
+}
+
+.btn--nonactive {
+  color: #31371F;
+  border: 3px solid #31371F;
+  background-color: transparent;
+  pointer-events: none;
 }
 
 .form-section {

@@ -24,6 +24,7 @@
     &:hover {
       transition: 0.5s;
       margin-top: 0;
+      margin-bottom: 20px;
       background-color: $green;
       color: #000000;
       & .subjects__subtitle--green-acent {

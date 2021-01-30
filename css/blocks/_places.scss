@@ -1,0 +1,78 @@
+.places {
+  display: flex;
+  justify-content: space-between;
+  //   align-items: sr;
+
+  &__item {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+
+    &--middle-height {
+      margin-top: 98px;
+    }
+    &--little-height {
+      margin-top: 154px;
+    }
+  }
+  &__number {
+    color: $green;
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 66px;
+    line-height: 0;
+
+    &--middle-font {
+      font-size: 54px;
+      margin-bottom: 47px;
+    }
+    &--little-font {
+      font-size: 48px;
+      margin-bottom: 47px;
+    }
+  }
+  &__prize {
+    background-color: $green;
+    color: #000000;
+    padding: 16px 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+
+    &-item {
+      margin-left: 24px;
+      position: relative;
+      margin-bottom: 2px;
+      line-height: 1.2;
+      &:before {
+        position: absolute;
+        content: '';
+        height: 15px;
+        width: 15px;
+        top: 6px;
+        left: -24px;
+        background-color: #000000;
+      }
+    }
+  }
+}
+
+.section__title--with-icon {
+  margin-left: 100px;
+  position: relative;
+  &::before {
+    left: -237px;
+  }
+  &::after {
+    position: absolute;
+    display: block;
+    content: url(./../assets/img/cup.svg);
+    // height: 93px;
+    width: 79px;
+    left: -98px;
+    top: -28px;
+  }
+}

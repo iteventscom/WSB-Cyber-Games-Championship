@@ -1,0 +1,25 @@
+.comand-terms {
+  counter-reset: num;
+
+  &__item {
+    position: relative;
+    line-height: 1.4;
+    margin-bottom: 21px;
+
+    &:before {
+      content: counter(num);
+      counter-increment: num;
+      display: inline-block;
+      position: absolute;
+      top: 6px;
+      left: -30px;
+      width: 20px;
+      height: 20px;
+      background: $green;
+      color: #000000;
+      text-align: center;
+      line-height: 18px;
+      font-size: 14px;
+    }
+  }
+}

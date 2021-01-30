@@ -23,23 +23,23 @@ $tableprice_bg-hover: #fcf5f9; //цвет фона рамки при навед�
 
 .section__title {
   text-align: left;
-  color: $green;
+  color: #ffff00;
   text-transform: uppercase;
   position: relative;
   letter-spacing: 0.05em;
   line-height: 1;
   margin-bottom: 6px;
-  
+
   &::before {
     content: '';
     position: absolute;
     z-index: 10;
     top: 50%;
     left: -137px;
-    background-color: $green;
+    background-color: #ffff00;
     width: 120px;
     height: 2px;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
   }
   &--margin {
     margin-bottom: 108px;
