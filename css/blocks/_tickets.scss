@@ -7,14 +7,41 @@
     border: 3px solid $green;
     padding: 3px;
     border-radius: 0 25px;
+
+    &--unactive {
+      & .tickets__price {
+        &-col {
+          border-right: 3px solid #31371f;
+        }
+        &-row {
+          border-bottom: 3px solid #31371f;
+        }
+      }
+      & .tickets__condition {
+        background-color: transparent;
+        color: $green;
+      }
+
+      & .tickets__price-summ {
+        color: #191919;
+        -webkit-text-stroke: 2px $green;
+      }
+      & .btn {
+        color: #31371f;
+        border: 3px solid #31371f;
+        background-color: transparent;
+        pointer-events: none;
+      }
+    }
   }
 
   &__condition {
+    border: 3px solid $green;
     min-height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;
+    padding: 14px 0;
     text-align: center;
     border-radius: 0 20px 0 0;
     background-color: $green;
@@ -52,8 +79,10 @@
       color: $green;
       font-weight: 700;
       font-size: 54px;
+      margin-bottom: 10px;
       &--small-font {
         font-size: 36px;
+        margin-bottom: 0;
       }
     }
     &-team {
@@ -84,10 +113,10 @@
     }
   }
 
-  &--nonactive {
-      color: #31371F;
-      border: 3px solid #31371F;
-      background-color: transparent;
-      pointer-events: none;
-  }
+  //   &--nonactive {
+  //     color: #31371f;
+  //     border: 3px solid #31371f;
+  //     background-color: transparent;
+  //     pointer-events: none;
+  //   }
 }

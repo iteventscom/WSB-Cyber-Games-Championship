@@ -986,12 +986,38 @@ h3 {
   border-radius: 0 25px;
 }
 
+.tickets__item--unactive .tickets__price-col {
+  border-right: 3px solid #31371f;
+}
+
+.tickets__item--unactive .tickets__price-row {
+  border-bottom: 3px solid #31371f;
+}
+
+.tickets__item--unactive .tickets__condition {
+  background-color: transparent;
+  color: #93c11a;
+}
+
+.tickets__item--unactive .tickets__price-summ {
+  color: #191919;
+  -webkit-text-stroke: 2px #93c11a;
+}
+
+.tickets__item--unactive .btn {
+  color: #31371f;
+  border: 3px solid #31371f;
+  background-color: transparent;
+  pointer-events: none;
+}
+
 .tickets__condition {
+  border: 3px solid #93c11a;
   min-height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
+  padding: 14px 0;
   text-align: center;
   border-radius: 0 20px 0 0;
   background-color: #93c11a;
@@ -1033,10 +1059,12 @@ h3 {
   color: #93c11a;
   font-weight: 700;
   font-size: 54px;
+  margin-bottom: 10px;
 }
 
 .tickets__price-summ--small-font {
   font-size: 36px;
+  margin-bottom: 0;
 }
 
 .tickets__price-team {
@@ -1066,13 +1094,6 @@ h3 {
 
 .btn--buy:hover {
   background-color: #ffff00;
-}
-
-.btn--nonactive {
-  color: #31371F;
-  border: 3px solid #31371F;
-  background-color: transparent;
-  pointer-events: none;
 }
 
 .form-section {
