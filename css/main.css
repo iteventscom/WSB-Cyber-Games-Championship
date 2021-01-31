@@ -974,6 +974,72 @@ h3 {
   top: -28px;
 }
 
+.participants {
+  margin-top: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: -16px;
+}
+
+.participants__item {
+  width: 24%;
+  border: 3px solid #93c11a;
+  padding: 3px;
+  margin-bottom: 16px;
+}
+
+.participants__pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 136px;
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 3px solid #93c11a;
+}
+
+.participants__img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.participants__games {
+  display: flex;
+  justify-content: space-around;
+}
+
+.participants__games-item {
+  width: 31%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #93c11a;
+  padding: 16px 0;
+}
+
+.participants__games-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+
+.participants__games-img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.participants__games-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
 .tickets {
   display: flex;
   justify-content: space-between;
@@ -1076,6 +1142,7 @@ h3 {
 }
 
 .btn {
+  transition: 0.5s;
   display: block;
   color: #000000;
   background-color: #93c11a;
@@ -1093,6 +1160,7 @@ h3 {
 }
 
 .btn--buy:hover {
+  border: 3px solid #ffff00;
   background-color: #ffff00;
 }
 
@@ -1219,6 +1287,7 @@ h3 {
 }
 
 .footer-menu {
+  font-size: 16px;
   display: flex;
   justify-content: space-between;
 }
