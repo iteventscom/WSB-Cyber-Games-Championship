@@ -1,0 +1,36 @@
+.menu {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  top: 0;
+  font-size: 18px;
+  background-color: #191919;
+  &__list {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    margin-right: 34px;
+  }
+  &__link {
+      &:hover {
+          color: $green;
+      }
+  }
+}
+.header {
+  height: 168px;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  display: block;
+  height: 110px;
+  width: 110px;
+  overflow: hidden;
+  margin-right: 92px;
+  &__img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}

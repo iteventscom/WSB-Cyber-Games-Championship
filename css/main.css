@@ -381,6 +381,7 @@ body {
   font-size: 21px;
   background-color: #191919;
   color: #ffffff;
+  padding-top: 168px;
 }
 
 .section {
@@ -393,7 +394,7 @@ body {
 }
 
 .wrapper {
-  width: 1160px;
+  width: 1170px;
   margin: 0 auto;
 }
 
@@ -465,7 +466,7 @@ h3 {
   padding: 8px 8px;
   background-color: transparent;
   color: #93c11a;
-  font: normal 14px/1.42 "Open Sans", sans-serif;
+  font: normal 14px/1.42 'Open Sans', sans-serif;
   cursor: pointer;
   transition: 0.4s;
   white-space: nowrap;
@@ -475,6 +476,13 @@ h3 {
 .button:hover {
   background-color: #93c11a;
   color: #000000;
+}
+
+.button__header {
+  border-width: 3px;
+  padding: 16px 10px;
+  line-height: 1;
+  font-size: 18px;
 }
 
 .button__presen {
@@ -491,6 +499,46 @@ h3 {
   display: flex;
   font-size: 24px;
   padding: 8px 19px 11px;
+}
+
+.menu {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  top: 0;
+  font-size: 18px;
+  background-color: #191919;
+}
+
+.menu__list {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  margin-right: 34px;
+}
+
+.menu__link:hover {
+  color: #93c11a;
+}
+
+.header {
+  height: 168px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+  height: 110px;
+  width: 110px;
+  overflow: hidden;
+  margin-right: 92px;
+}
+
+.logo__img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 .about {

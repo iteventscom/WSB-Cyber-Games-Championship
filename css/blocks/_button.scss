@@ -1,11 +1,11 @@
 .button {
   // padding: 8px 19px;
   border: 5px solid $green;
-border-radius: 15px;
+  border-radius: 15px;
   padding: 8px 8px;
   background-color: transparent;
   color: $green;
-  font: normal 14px/1.42 "Open Sans", sans-serif;
+  font: normal 14px/1.42 'Open Sans', sans-serif;
   cursor: pointer;
   transition: 0.4s;
   white-space: nowrap;
@@ -15,8 +15,13 @@ border-radius: 15px;
     background-color: $green;
     color: #000000;
   }
+  &__header {
+    border-width: 3px;
+    padding: 16px 10px;
+    line-height: 1;
+    font-size: 18px;
+  }
 }
-
 
 .button__presen {
   color: #fff;
