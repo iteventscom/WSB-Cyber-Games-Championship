@@ -640,6 +640,7 @@ h3 {
   height: 100%;
   width: 100%;
   object-fit: contain;
+  fill: white;
 }
 
 .format__regulations-link {
@@ -793,6 +794,10 @@ h3 {
   border-left: 10px solid #93c11a;
 }
 
+.subjects__item:hover .subjects__img {
+  fill: #191919;
+}
+
 .subjects__pic {
   display: flex;
   flex: 1;
@@ -806,6 +811,7 @@ h3 {
 
 .subjects__img {
   object-fit: none;
+  fill: #ffffff;
 }
 
 .subjects__subtitle {
