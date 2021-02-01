@@ -389,6 +389,7 @@ body {
 
 .section {
   min-width: 1440px;
+  position: relative;
 }
 
 .section--margin {
@@ -501,6 +502,16 @@ h3 {
   display: flex;
   font-size: 24px;
   padding: 8px 19px 11px;
+}
+
+.anchor-place {
+  position: absolute;
+  display: block;
+  top: -170px;
+  height: 0px;
+  width: 0px;
+  background-color: transparent;
+  opacity: 0;
 }
 
 .menu {
