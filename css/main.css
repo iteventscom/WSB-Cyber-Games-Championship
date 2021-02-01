@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -597,17 +598,79 @@ h3 {
   grid-row-end: span 4;
 }
 
+.format__spoiler {
+  position: relative;
+}
+
 .format__stage {
   padding: 4px 19px;
-  margin-bottom: 28px;
+  position: relative;
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+.format__stage--arowed::before {
+  content: '';
+  height: 3px;
+  width: 65px;
+  background-color: #93c11a;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateX(100%);
+}
+
+.format__stage--arowed::after {
+  content: '';
+  position: absolute;
+  top: 42%;
+  right: -63px;
+  height: 12px;
+  width: 12px;
+  transform: rotate(45deg);
+  border-right: 3px solid #93c11a;
+  border-top: 3px solid #93c11a;
+}
+
+.format__stage--arowed:last-child::before {
+  content: none;
+}
+
+.format__stage-inner {
+  padding: 19px;
+  background-color: #93c11a;
+  color: #191919;
+  border-radius: 0 0 20px;
+  overflow: hidden;
 }
 
 .format__stage-title {
+  display: inline-block;
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1;
   margin-bottom: 6px;
+  position: relative;
+}
+
+.format__stage-title::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(150%, -40%);
+  content: '+';
+  display: block;
+  text-align: center;
+  border: 2px solid #93c11a;
+  height: 18px;
+  width: 18px;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #93c11a;
+  line-height: 1;
+  border-radius: 50%;
+  color: #191919;
 }
 
 .format__stage-subtitle {
@@ -693,6 +756,30 @@ h3 {
   font-size: 28px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+details summary::-webkit-details-marker {
+  /* нестандартный псевдоэлемент Google Chrome */
+  display: none;
+}
+
+details[open] .format__stage-title::after {
+  content: '-';
+  background-color: transparent;
+  color: #ffffff;
+}
+
+details[open] .format__spoiler-inner {
+  animation: raz11 1.5s;
+}
+
+@keyframes raz11 {
+  0% {
+    max-height: 0;
+  }
+  100% {
+    max-height: 300px;
+  }
 }
 
 .info-block {

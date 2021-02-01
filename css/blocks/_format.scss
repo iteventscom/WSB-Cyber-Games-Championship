@@ -10,7 +10,7 @@
     '. . .'
     '. . .'
     '. . .';
-    margin-bottom: 88px;
+  margin-bottom: 88px;
 
   &__item {
     border: 3px solid $green;
@@ -18,16 +18,76 @@
   &__extra {
     grid-row-end: span 4;
   }
-
+  &__spoiler {
+    position: relative;
+  }
   &__stage {
     padding: 4px 19px;
-    margin-bottom: 28px;
+    // margin-bottom: 28px;
+    position: relative;
+    align-self: flex-start;
+    cursor: pointer;
+    &--arowed {
+      &::before {
+        content: '';
+        height: 3px;
+        width: 65px;
+        background-color: rgb(147, 193, 26);
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateX(100%);
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        top: 42%;
+        right: -63px;
+        height: 12px;
+        width: 12px;
+        transform: rotate(45deg);
+        border-right: 3px solid $green;
+        border-top: 3px solid $green;
+      }
+      &:last-child {
+        &::before {
+          content: none;
+        }
+      }
+    }
+    &-inner {
+      padding: 19px;
+      background-color: $green;
+      color: #191919;
+      border-radius: 0 0 20px;
+      overflow: hidden;
+    }
     &-title {
+      display: inline-block;
       font-size: 30px;
       font-weight: 700;
       text-transform: uppercase;
       line-height: 1;
       margin-bottom: 6px;
+      position: relative;
+      &::after {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(150%, -40%);
+        content: '+';
+        display: block;
+        text-align: center;
+        border: 2px solid $green;
+        height: 18px;
+        width: 18px;
+        font-size: 16px;
+        font-weight: 400;
+        background-color: $green;
+        line-height: 1;
+        border-radius: 50%;
+        color: #191919;
+      }
     }
     &-subtitle {
       font-size: 21px;
@@ -78,6 +138,7 @@
       }
     }
   }
+
   &__extra {
     padding: 20px 0;
     border-color: #ffff00;
@@ -106,6 +167,26 @@
       font-weight: 700;
       text-transform: uppercase;
     }
+  }
+}
+details summary::-webkit-details-marker {
+  /* нестандартный псевдоэлемент Google Chrome */
+  display: none;
+}
+details[open] .format__stage-title::after {
+  content: '-';
+  background-color: transparent;
+  color: #ffffff;
+}
+details[open] .format__spoiler-inner {
+  animation: raz11 1.5s;
+}
+@keyframes raz11 {
+  0% {
+    max-height: 0;
+  }
+  100% {
+    max-height: 300px;
   }
 }
 
@@ -146,4 +227,3 @@
     line-height: 1.22;
   }
 }
-
