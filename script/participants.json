@@ -1,0 +1,17 @@
+[
+    {
+        "logoCompany": "./assets/img/Selectel_logo.png",
+        "csgo": "x1"
+    },
+    {
+        "logoCompany": "./assets/img/Selectel_logo.png",
+        "dota": "x1",
+        "lol": "x1"
+    },
+    {
+        "logoCompany": "./assets/img/Selectel_logo.png",
+        "csgo": "x1",
+        "dota": "x1",
+        "lol": "x2"
+    }
+]
