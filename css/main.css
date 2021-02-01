@@ -641,7 +641,7 @@ h3 {
   height: 100%;
   width: 100%;
   object-fit: contain;
-  fill: white;
+  fill: #93c11a;
 }
 
 .format__regulations-link {
@@ -1028,6 +1028,13 @@ h3 {
   flex: 1;
   text-align: right;
   white-space: nowrap;
+  display: flex;
+  justify-content: flex-end;
+  align-self: center;
+}
+
+.timetable__group--litle-font {
+  font-size: 14px;
 }
 
 .translations {
