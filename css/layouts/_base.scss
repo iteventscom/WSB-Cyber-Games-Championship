@@ -2,11 +2,13 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
 body,
 html {
   margin: 0;
   padding: 0;
-  height: 100%;
   width: 100%;
   font: 400 21px/1.42 'Roboro', 'Segoe UI', sans-serif;
   font-size: 16px;
@@ -42,11 +44,10 @@ body {
   font-size: 21px;
   background-color: #191919;
   color: #ffffff;
-  padding-top: 168px;
+  min-width: 100%;
 }
 .section {
-  padding: 0 140px;
-  min-width: 1440x;
+  min-width: 1440px;
   &--margin {
     margin-bottom: 170px;
   }
@@ -55,7 +56,6 @@ body {
 .wrapper {
   width: 1170px;
   margin: 0 auto;
-  // overflow: hidden;
 }
 
 h1 {

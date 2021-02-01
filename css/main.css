@@ -341,11 +341,14 @@ template {
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body,
 html {
   margin: 0;
   padding: 0;
-  height: 100%;
   width: 100%;
   font: 400 21px/1.42 'Roboro', 'Segoe UI', sans-serif;
   font-size: 16px;
@@ -381,12 +384,11 @@ body {
   font-size: 21px;
   background-color: #191919;
   color: #ffffff;
-  padding-top: 168px;
+  min-width: 100%;
 }
 
 .section {
-  padding: 0 140px;
-  min-width: 1440x;
+  min-width: 1440px;
 }
 
 .section--margin {
@@ -502,7 +504,8 @@ h3 {
 }
 
 .menu {
-  position: fixed;
+  position: sticky;
+  min-width: 1440px;
   z-index: 100;
   width: 100%;
   top: 0;
@@ -552,6 +555,7 @@ h3 {
   height: 226px;
   overflow: hidden;
   margin-right: 75px;
+  background-color: #333333;
 }
 
 .about__pic {
@@ -570,7 +574,7 @@ h3 {
   display: grid;
   grid-template-columns: 29% 29% 32%;
   gap: 44px 62px;
-  grid-template-areas: '. . .' '. . .' '. . .' '. . .' '. . .';
+  grid-template-areas: '. . .' '. . .' '. . .' '. . .' '. . .';
 }
 
 .format__item {
