@@ -1,0 +1,15 @@
+[
+    {
+        "logoCompany": "./assets/img/vsk_logo.svg",
+        "title": "Генеральный партнер"
+    },{
+        "logoCompany": "./assets/img/vsk_logo.svg",
+        "title": "Генеральный партнер"
+    },{
+        "logoCompany": "./assets/img/vsk_logo.svg",
+        "title": "Генеральный партнер"
+    },{
+        "logoCompany": "./assets/img/vsk_logo.svg",
+        "title": "Инфо партнер"
+    }
+]

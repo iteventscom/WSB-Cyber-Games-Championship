@@ -1203,6 +1203,7 @@ h3 {
   flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: -16px;
+  min-height: 250px;
 }
 
 .participants__item {
@@ -1394,6 +1395,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  min-height: 301px;
   margin-bottom: -16px;
 }
 
@@ -1423,6 +1425,10 @@ h3 {
 }
 
 .partners__title {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #93c11a;
   color: #000000;
   text-align: center;

@@ -1,16 +1,12 @@
 const participants = document.querySelector('.participants');
-console.log(participants);
 
 (async () => {
-  let DB = await (await fetch('./script/participants.json')).json();
-  console.log(DB);
+  let DB = await (await fetch('./script/participants.txt')).json();
   DB.forEach((element) => {
-    /// / создание элементов BG слайдера
     participantsItem = document.createElement('li');
     participantsItem.className = 'participants__item';
     participants.append(participantsItem);
 
-    // создание и добавления bg image
     participantsPic = document.createElement('div');
     participantsPic.className = 'participants__pic';
     participantsItem.append(participantsPic);
@@ -53,7 +49,6 @@ function createGamesItem(element, game) {
     participantsGamesImg.src = './assets/img/CSGO_logo.svg';
     participantsGamesTitle = document.createElement('div');
     participantsGamesTitle.className = 'participants__games-title';
-    console.log(element);
     participantsGamesTitle.innerText = element.csgo;
     participantsGamesItem.append(participantsGamesTitle);
   }
