@@ -1157,7 +1157,6 @@ details summary::-webkit-details-marker {
 .translations__item {
   display: flex;
   flex-direction: column;
-  width: 32%;
   align-items: center;
   margin-right: 52px;
 }
