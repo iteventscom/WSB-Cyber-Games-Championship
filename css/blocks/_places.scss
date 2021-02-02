@@ -5,33 +5,56 @@
 
   &__item {
     width: 32%;
+    height: 377px;
     display: flex;
     flex-direction: column;
+    background-color: #333333;
+    justify-content: center;
+    color: #ffff00;
+    position: relative;
 
-    &--middle-height {
-      margin-top: 98px;
+    &--2nd {
+      color: #c8c8c8;
     }
-    &--little-height {
-      margin-top: 154px;
+    &--3nd {
+      color: #a05700;
+    }
+    &:hover {
+      margin-top: -25px;
+      &::after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: '';
+        border-left: 10px solid #191919;
+        border-bottom: 10px solid #191919;
+        border-top: 10px solid #333333;
+        border-right: 10px solid #333333;
+      }
+      &::before {
+        position: absolute;
+        right: 0;
+        top: 0;
+        content: '';
+        border-right: 10px solid #191919;
+        border-top: 10px solid #191919;
+        border-bottom: 10px solid #333333;
+        border-left: 10px solid #333333;
+      }
     }
   }
   &__number {
-    color: $green;
-    font-size: 64px;
+    font-size: 150px;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 66px;
     line-height: 1;
-
-    &--middle-font {
-      font-size: 54px;
-      margin-bottom: 47px;
-    }
-    &--little-font {
-      font-size: 48px;
-      margin-bottom: 47px;
-    }
+  }
+  &__subtitle {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
   }
   &__prize {
     background-color: $green;

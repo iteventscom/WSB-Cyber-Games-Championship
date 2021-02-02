@@ -572,7 +572,7 @@ h3 {
   width: 100%;
   top: 0;
   font-size: 18px;
-  background-color: #000;
+  background-color: #191919;
 }
 
 .menu__list {
@@ -596,11 +596,13 @@ h3 {
 
 .logo {
   display: block;
-  height: 110px;
+  padding: 4px;
+  height: 76px;
   width: 110px;
   overflow: hidden;
   position: absolute;
-  bottom: -34px;
+  bottom: -14px;
+  background-color: #191919;
 }
 
 .logo__img {
@@ -1386,6 +1388,12 @@ details summary::-webkit-details-marker {
   line-height: 23px;
 }
 
+.translations__link {
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
 .text--green {
   color: #93c11a;
 }
@@ -1427,36 +1435,62 @@ details summary::-webkit-details-marker {
 
 .places__item {
   width: 32%;
+  height: 377px;
   display: flex;
   flex-direction: column;
+  background-color: #333333;
+  justify-content: center;
+  color: #ffff00;
+  position: relative;
 }
 
-.places__item--middle-height {
-  margin-top: 98px;
+.places__item--2nd {
+  color: #c8c8c8;
 }
 
-.places__item--little-height {
-  margin-top: 154px;
+.places__item--3nd {
+  color: #a05700;
+}
+
+.places__item:hover {
+  margin-top: -25px;
+}
+
+.places__item:hover::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+  border-left: 10px solid #191919;
+  border-bottom: 10px solid #191919;
+  border-top: 10px solid #333333;
+  border-right: 10px solid #333333;
+}
+
+.places__item:hover::before {
+  position: absolute;
+  right: 0;
+  top: 0;
+  content: '';
+  border-right: 10px solid #191919;
+  border-top: 10px solid #191919;
+  border-bottom: 10px solid #333333;
+  border-left: 10px solid #333333;
 }
 
 .places__number {
-  color: #93c11a;
-  font-size: 64px;
+  font-size: 150px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 66px;
   line-height: 1;
 }
 
-.places__number--middle-font {
-  font-size: 54px;
-  margin-bottom: 47px;
-}
-
-.places__number--little-font {
-  font-size: 48px;
-  margin-bottom: 47px;
+.places__subtitle {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .places__prize {
@@ -1574,6 +1608,7 @@ details summary::-webkit-details-marker {
 }
 
 .tickets {
+  margin-top: 40px;
   display: flex;
   justify-content: space-between;
 }

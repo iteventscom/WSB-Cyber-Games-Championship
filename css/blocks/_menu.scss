@@ -5,8 +5,8 @@
   width: 100%;
   top: 0;
   font-size: 18px;
-  // background-color: #191919;
-  background-color: #000;
+  background-color: #191919;
+  // background-color: #000;
   &__list {
     margin-left: 202px;
     display: flex;
@@ -29,12 +29,14 @@
 }
 .logo {
   display: block;
-  height: 110px;
+  padding: 4px;
+  height: 76px;
   width: 110px;
   overflow: hidden;
   // margin-right: 92px;
   position: absolute;
-  bottom: -34px;
+  bottom: -14px;
+  background-color: #191919;
   &__img {
     height: 100%;
     width: 100%;
