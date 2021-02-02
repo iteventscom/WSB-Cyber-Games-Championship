@@ -503,7 +503,7 @@ h3 {
   background: center no-repeat url("./../assets/img/dots__btn--white.svg");
 }
 
-.button__hero-main:hover, .button__hero-main--active {
+.button__hero-main:hover, .button__hero-main.button__active {
   background: center no-repeat url("./../assets/img/dots__btn.svg");
   background-color: #93c11a;
 }
@@ -516,27 +516,27 @@ h3 {
   background: center 40%/80% no-repeat url("./../assets/img/CSGO_logo.svg");
 }
 
-.button__hero-game--csgo:hover {
-  background-color: #45BBFE;
-  border-color: #45BBFE;
+.button__hero-game--csgo.button__active {
+  background-color: #45bbfe;
+  border-color: #45bbfe;
 }
 
 .button__hero-game--dota {
   background: center 50%/80% no-repeat url("./../assets/img/Dota2_logo.svg");
 }
 
-.button__hero-game--dota:hover {
-  background-color: #FE4545;
-  border-color: #FE4545;
+.button__hero-game--dota.button__active {
+  background-color: #fe4545;
+  border-color: #fe4545;
 }
 
 .button__hero-game--lol {
   background: center 50%/80% no-repeat url("./../assets/img/LoL_logo.svg");
 }
 
-.button__hero-game--lol:hover {
-  background-color: #FF00E5;
-  border-color: #FF00E5;
+.button__hero-game--lol.button__active {
+  background-color: #ff00e5;
+  border-color: #ff00e5;
 }
 
 .button__presen {
@@ -616,6 +616,22 @@ h3 {
   background: bottom -10px right/contain no-repeat url("./../assets/img/hero__bg.png");
 }
 
+.hero-section--main {
+  background: bottom -10px right/contain no-repeat url("./../assets/img/hero__bg.png");
+}
+
+.hero-section--csgo {
+  background: bottom -10px right -203px/79% no-repeat url("./../assets/img/hero__bg--csgo.png");
+}
+
+.hero-section--dota {
+  background: bottom -10px right 30px/contain no-repeat url("./../assets/img/hero__bg--dota.png");
+}
+
+.hero-section--lol {
+  background: bottom -10px right 150px/contain no-repeat url("./../assets/img/hero__bg--lol.png");
+}
+
 .hero__title {
   font-weight: bold;
   font-size: 49px;
@@ -642,6 +658,7 @@ h3 {
 }
 
 .hero__line {
+  transition: 0.5s;
   position: absolute;
   z-index: 10;
   background-color: #93c11a;
@@ -650,6 +667,22 @@ h3 {
   width: 50%;
   right: 0;
   bottom: 0px;
+}
+
+.hero__line--main {
+  background-color: #93c11a;
+}
+
+.hero__line--csgo {
+  background-color: #45bbfe;
+}
+
+.hero__line--dota {
+  background-color: #fe4545;
+}
+
+.hero__line--lol {
+  background-color: #ff00e5;
 }
 
 .about {

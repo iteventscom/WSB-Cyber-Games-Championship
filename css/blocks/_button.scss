@@ -33,7 +33,7 @@
       width: 100px;
       background: center no-repeat url('./../assets/img/dots__btn--white.svg');
       &:hover,
-      &--active {
+      &.button__active {
         background: center no-repeat url('./../assets/img/dots__btn.svg');
         background-color: $green;
       }
@@ -42,23 +42,26 @@
       width: 142px;
       &--csgo {
         background: center 40% / 80% no-repeat url('./../assets/img/CSGO_logo.svg');
-        &:hover {
-          background-color: #45BBFE;
-          border-color: #45BBFE;
+
+        &.button__active {
+          background-color: #45bbfe;
+          border-color: #45bbfe;
         }
       }
       &--dota {
         background: center 50% / 80% no-repeat url('./../assets/img/Dota2_logo.svg');
-        &:hover {
-          background-color: #FE4545;
-          border-color: #FE4545;
+
+        &.button__active {
+          background-color: #fe4545;
+          border-color: #fe4545;
         }
       }
       &--lol {
         background: center 50% / 80% no-repeat url('./../assets/img/LoL_logo.svg');
-        &:hover {
-          background-color: #FF00E5;
-          border-color: #FF00E5;
+
+        &.button__active {
+          background-color: #ff00e5;
+          border-color: #ff00e5;
         }
       }
     }
