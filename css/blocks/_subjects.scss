@@ -10,12 +10,8 @@
     width: 377px;
     height: 377px;
     background: #333333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin-right: 20px;
-    padding-bottom: 78px;
+    // padding-bottom: 78px;
     transition: 0.5s;
     &:last-child {
       margin-right: 0;
@@ -54,6 +50,14 @@
         fill: #191919;
       }
     }
+  }
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-bottom: 78px;
   }
   &__pic {
     display: flex;
