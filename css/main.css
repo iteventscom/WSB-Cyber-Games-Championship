@@ -488,6 +488,57 @@ h3 {
   font-size: 18px;
 }
 
+.button__hero {
+  display: inline-block;
+  min-height: 100px;
+  margin-right: 10px;
+}
+
+.button__hero:last-child {
+  margin-right: 0;
+}
+
+.button__hero-main {
+  width: 100px;
+  background: center no-repeat url("./../assets/img/dots__btn--white.svg");
+}
+
+.button__hero-main:hover, .button__hero-main--active {
+  background: center no-repeat url("./../assets/img/dots__btn.svg");
+  background-color: #93c11a;
+}
+
+.button__hero-game {
+  width: 142px;
+}
+
+.button__hero-game--csgo {
+  background: center 40%/80% no-repeat url("./../assets/img/CSGO_logo.svg");
+}
+
+.button__hero-game--csgo:hover {
+  background-color: #45BBFE;
+  border-color: #45BBFE;
+}
+
+.button__hero-game--dota {
+  background: center 50%/80% no-repeat url("./../assets/img/Dota2_logo.svg");
+}
+
+.button__hero-game--dota:hover {
+  background-color: #FE4545;
+  border-color: #FE4545;
+}
+
+.button__hero-game--lol {
+  background: center 50%/80% no-repeat url("./../assets/img/LoL_logo.svg");
+}
+
+.button__hero-game--lol:hover {
+  background-color: #FF00E5;
+  border-color: #FF00E5;
+}
+
 .button__presen {
   color: #fff;
   background-color: #114490;
@@ -553,6 +604,52 @@ h3 {
   height: 100%;
   width: 100%;
   object-fit: contain;
+}
+
+.hero-section {
+  margin: 0 auto;
+  margin-top: 44px;
+  padding-bottom: 44px;
+  margin-bottom: 64px;
+  position: relative;
+  width: 1440px;
+  background: bottom -10px right/contain no-repeat url("./../assets/img/hero__bg.png");
+}
+
+.hero__title {
+  font-weight: bold;
+  font-size: 49px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.hero__title--heit-font {
+  display: block;
+  font-size: 80px;
+}
+
+.hero__title--middle-font {
+  display: block;
+  font-size: 72px;
+}
+
+.hero__subtitle {
+  color: #93c11a;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+}
+
+.hero__line {
+  position: absolute;
+  z-index: 10;
+  background-color: #93c11a;
+  border-radius: 4px 0 0 4px;
+  height: 8px;
+  width: 50%;
+  right: 0;
+  bottom: 0px;
 }
 
 .about {

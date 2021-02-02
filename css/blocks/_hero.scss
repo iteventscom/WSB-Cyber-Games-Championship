@@ -1,0 +1,42 @@
+.hero {
+    &-section {
+        margin: 0 auto;
+        margin-top: 44px;
+        padding-bottom: 44px;
+        margin-bottom: 64px;
+        position: relative;
+        width: 1440px;
+        background: bottom -10px right  / contain no-repeat url('./../assets/img/hero__bg.png');
+    }
+  &__title {
+    font-weight: bold;
+    font-size: 49px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    &--heit-font {
+        display: block;
+        font-size: 80px;
+    }
+    &--middle-font {
+        display: block;
+        font-size: 72px;
+    }
+  }
+  &__subtitle {
+    color: $green;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+  }
+  &__line {
+      position: absolute;
+      z-index: 10;
+      background-color: $green;
+      border-radius: 4px 0 0 4px;
+      height: 8px;
+      width: 50%;
+      right: 0;
+      bottom: 0px;
+  }
+}
