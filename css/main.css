@@ -1100,9 +1100,8 @@ details summary::-webkit-details-marker {
 }
 
 .timetable__item {
-  width: 49%;
-  margin-right: 22px;
-  margin-bottom: 22px;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .timetable__item:nth-child(2n) {
@@ -1113,13 +1112,65 @@ details summary::-webkit-details-marker {
   margin-right: 0;
 }
 
+.timetable__item:not(:first-child) .timetable__table-col::after {
+  opacity: 0.5;
+}
+
 .timetable__table {
+  display: flex;
+}
+
+.timetable__table-col {
   border: 2px solid #93c11a;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-right: 3px;
+  position: relative;
+}
+
+.timetable__table-col:last-child {
+  margin-right: 0;
+}
+
+.timetable__table-col:not(:first-child) {
+  text-align: center;
+}
+
+.timetable__table-col--csgo::after {
+  position: absolute;
+  content: '';
+  top: -20px;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  width: 84px;
+  height: 34px;
+  background: center/contain no-repeat url("./../assets/img/CSGO_logo.svg");
+}
+
+.timetable__table-col--dota::after {
+  position: absolute;
+  content: '';
+  top: -20px;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  width: 84px;
+  height: 34px;
+  background: center/contain no-repeat url("./../assets/img/Dota2_logo.svg");
+}
+
+.timetable__table-col--lol::after {
+  position: absolute;
+  content: '';
+  top: -20px;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  width: 84px;
+  height: 34px;
+  background: center/contain no-repeat url("./../assets/img/LoL_logo.svg");
 }
 
 .timetable__table-row {
-  display: flex;
-  justify-content: space-between;
   padding: 6px 8px;
 }
 
@@ -1582,10 +1633,12 @@ details summary::-webkit-details-marker {
 
 .subscribe-form-item__control {
   min-height: 77px;
-  padding: 14px 34px;
-  border-radius: 15px;
+  padding: 14px 44px;
+  border-radius: 10px;
   border: none;
   line-height: normal;
+  letter-spacing: -1.2px;
+  color: #A4A4A4;
 }
 
 .subscribe-form-item__control::placeholder {

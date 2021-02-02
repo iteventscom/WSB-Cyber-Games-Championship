@@ -22,10 +22,12 @@
 
 .subscribe-form-item__control {
   min-height: 77px;
-  padding: 14px 34px;
-  border-radius: 15px;
+  padding: 14px 44px;
+  border-radius: 10px;
   border: none;
   line-height: normal;
+  letter-spacing: -1.2px;
+  color: #A4A4A4;
 
   &::placeholder {
     color: #A4A4A4;
