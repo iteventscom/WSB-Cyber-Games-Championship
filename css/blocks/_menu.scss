@@ -5,8 +5,10 @@
   width: 100%;
   top: 0;
   font-size: 18px;
-  background-color: #191919;
+  // background-color: #191919;
+  background-color: #000;
   &__list {
+    margin-left: 202px;
     display: flex;
     flex: 1;
     justify-content: space-between;
@@ -19,7 +21,9 @@
   }
 }
 .header {
-  height: 168px;
+  position: relative;
+  // height: 168px;
+  padding: 17px 0;
   display: flex;
   align-items: center;
 }
@@ -28,7 +32,9 @@
   height: 110px;
   width: 110px;
   overflow: hidden;
-  margin-right: 92px;
+  // margin-right: 92px;
+  position: absolute;
+  bottom: -34px;
   &__img {
     height: 100%;
     width: 100%;

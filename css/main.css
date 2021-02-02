@@ -572,10 +572,11 @@ h3 {
   width: 100%;
   top: 0;
   font-size: 18px;
-  background-color: #191919;
+  background-color: #000;
 }
 
 .menu__list {
+  margin-left: 202px;
   display: flex;
   flex: 1;
   justify-content: space-between;
@@ -587,7 +588,8 @@ h3 {
 }
 
 .header {
-  height: 168px;
+  position: relative;
+  padding: 17px 0;
   display: flex;
   align-items: center;
 }
@@ -597,7 +599,8 @@ h3 {
   height: 110px;
   width: 110px;
   overflow: hidden;
-  margin-right: 92px;
+  position: absolute;
+  bottom: -34px;
 }
 
 .logo__img {
@@ -707,7 +710,7 @@ h3 {
 
 .about__description {
   letter-spacing: 0.24px;
-  line-height: 23px;
+  line-height: 27px;
 }
 
 .format {
@@ -1037,6 +1040,7 @@ details summary::-webkit-details-marker {
 }
 
 .subjects__link {
+  pointer-events: none;
   display: flex;
   flex-direction: column;
   align-items: center;
