@@ -417,6 +417,10 @@ h3 {
   font: 500 24px/1.2 'Roboto', 'Segoe UI', sans-serif;
 }
 
+.section--invisible {
+  display: none;
+}
+
 .section-title {
   text-align: center;
   margin-bottom: 64px;
@@ -449,18 +453,34 @@ h3 {
   margin-bottom: 108px;
 }
 
+.section__title--csgo {
+  color: #45bbfe;
+}
+
+.section__title--csgo::before {
+  background-color: #45bbfe;
+}
+
+.section__title--dota {
+  color: #fe4545;
+}
+
+.section__title--dota::before {
+  background-color: #fe4545;
+}
+
+.section__title--lol {
+  color: #ff00e5;
+}
+
+.section__title--lol::before {
+  background-color: #ff00e5;
+}
+
 .section__subtitle {
   text-align: left;
   margin-bottom: 28px;
   font-size: 21px;
-}
-
-.section--red {
-  background-color: #e73a47;
-}
-
-.section--bg--blue a {
-  color: white;
 }
 
 .button {
@@ -474,6 +494,33 @@ h3 {
   transition: 0.4s;
   white-space: nowrap;
   text-align: center;
+}
+
+.button--csgo {
+  border-color: #45bbfe;
+  color: #45bbfe;
+}
+
+.button--csgo.button:hover {
+  background-color: #45bbfe;
+}
+
+.button--dota {
+  border-color: #fe4545;
+  color: #fe4545;
+}
+
+.button--dota.button:hover {
+  background-color: #fe4545;
+}
+
+.button--lol {
+  border-color: #ff00e5;
+  color: #ff00e5;
+}
+
+.button--lol.button:hover {
+  background-color: #ff00e5;
 }
 
 .button:hover {
@@ -662,6 +709,18 @@ h3 {
   margin-bottom: 80px;
 }
 
+.hero__subtitle--csgo {
+  color: #45bbfe;
+}
+
+.hero__subtitle--dota {
+  color: #fe4545;
+}
+
+.hero__subtitle--lol {
+  color: #ff00e5;
+}
+
 .hero__line {
   transition: 0.5s;
   position: absolute;
@@ -735,8 +794,79 @@ h3 {
   margin-right: 0;
 }
 
-.format__extra {
-  grid-row-end: span 4;
+.format__item--csgo {
+  border-color: #45bbfe;
+}
+
+.format__item--csgo .info-block-title {
+  color: #45bbfe;
+}
+
+.format__item--csgo .format__stage::before {
+  background-color: #45bbfe;
+  border-color: #45bbfe;
+}
+
+.format__item--csgo .format__stage::after {
+  filter: invert(69%) sepia(38%) saturate(3342%) hue-rotate(173deg) brightness(101%) contrast(99%);
+}
+
+.format__item--csgo .format__stage-inner {
+  background-color: #45bbfe;
+}
+
+.format__item--csgo .info-block-pic {
+  filter: invert(69%) sepia(38%) saturate(3342%) hue-rotate(173deg) brightness(101%) contrast(99%);
+}
+
+.format__item--dota {
+  border-color: #fe4545;
+}
+
+.format__item--dota .info-block-title {
+  color: #fe4545;
+}
+
+.format__item--dota .format__stage::before {
+  background-color: #fe4545;
+  border-color: #fe4545;
+}
+
+.format__item--dota .format__stage::after {
+  filter: invert(39%) sepia(35%) saturate(4355%) hue-rotate(335deg) brightness(103%) contrast(107%);
+}
+
+.format__item--dota .format__stage-inner {
+  background-color: #fe4545;
+}
+
+.format__item--dota .info-block-pic {
+  filter: invert(39%) sepia(35%) saturate(4355%) hue-rotate(335deg) brightness(103%) contrast(107%);
+}
+
+.format__item--lol {
+  border-color: #ff00e5;
+}
+
+.format__item--lol .info-block-title {
+  color: #ff00e5;
+}
+
+.format__item--lol .format__stage::before {
+  background-color: #ff00e5;
+  border-color: #ff00e5;
+}
+
+.format__item--lol .format__stage::after {
+  filter: invert(26%) sepia(71%) saturate(3016%) hue-rotate(290deg) brightness(92%) contrast(147%);
+}
+
+.format__item--lol .format__stage-inner {
+  background-color: #ff00e5;
+}
+
+.format__item--lol .info-block-pic {
+  filter: invert(26%) sepia(71%) saturate(3016%) hue-rotate(290deg) brightness(92%) contrast(147%);
 }
 
 .format__spoiler {
@@ -1399,7 +1529,7 @@ details summary::-webkit-details-marker {
 }
 
 .text--red {
-  color: #FE4545;
+  color: #fe4545;
 }
 
 .comand-terms {

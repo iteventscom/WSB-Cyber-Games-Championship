@@ -111,8 +111,8 @@
     width: 100%;
     border: 3px solid $green;
     &:hover {
-      border: 3px solid #ffff00;
-      background-color: #ffff00;
+      border: 3px solid $yellow;
+      background-color: $yellow;
     }
   }
 

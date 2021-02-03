@@ -3,18 +3,24 @@ $themecolor2: #e73a47; //цвет темы
 
 $grey: #3e3e3e;
 $green: #93c11a;
-$yellow: #f7e126; //Кнопка стандарт
-$button_hover: rgba(19, 21, 47, 1); //Кнопка ховер
+$yellow: #ffff00;
+$csgo: #45bbfe;
+$dota: #fe4545;
+$lol: #ff00e5;
 
-$pkAcentBorder: #ff0000;
-$pkAcent: $yellow;
+@mixin csgo {
+  color: $csgo;
+}
+@mixin dota {
+  color: $dota;
+}
+@mixin lol {
+  color: $lol;
+}
 
-$active-price: #b2bcd4; //декорация позунка
-
-$tableprice: #02adff; //цвет рамки билетов
-$tableprice_bg: rgba(115, 202, 243, 0); // цвет прозрачности рамки
-$tableprice_bg-hover: #fcf5f9; //цвет фона рамки при наведении
-
+.section--invisible {
+  display: none;
+}
 .section-title {
   text-align: center;
   margin-bottom: 64px;
@@ -23,7 +29,7 @@ $tableprice_bg-hover: #fcf5f9; //цвет фона рамки при навед�
 
 .section__title {
   text-align: left;
-  color: #ffff00;
+  color: $yellow;
   text-transform: uppercase;
   position: relative;
   letter-spacing: 0.05em;
@@ -36,7 +42,7 @@ $tableprice_bg-hover: #fcf5f9; //цвет фона рамки при навед�
     z-index: 10;
     top: 50%;
     left: -137px;
-    background-color: #ffff00;
+    background-color: $yellow;
     width: 120px;
     height: 2px;
     transform: translate(0, -50%);
@@ -44,17 +50,27 @@ $tableprice_bg-hover: #fcf5f9; //цвет фона рамки при навед�
   &--margin {
     margin-bottom: 108px;
   }
+  &--csgo {
+    @include csgo;
+    &::before {
+      background-color: $csgo;
+    }
+  }
+  &--dota {
+    @include dota;
+    &::before {
+      background-color: $dota;
+    }
+  }
+  &--lol {
+    @include lol;
+    &::before {
+      background-color: $lol;
+    }
+  }
 }
 .section__subtitle {
   text-align: left;
   margin-bottom: 28px;
   font-size: 21px;
-}
-
-.section--red {
-  background-color: $themecolor2;
-}
-
-.section--bg--blue a {
-  color: white;
 }
