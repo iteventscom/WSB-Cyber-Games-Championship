@@ -808,15 +808,15 @@ h3 {
 }
 
 .format__item--csgo .format__stage::after {
-  filter: invert(69%) sepia(38%) saturate(3342%) hue-rotate(173deg) brightness(101%) contrast(99%);
+  fill: #45bbfe;
 }
 
 .format__item--csgo .format__stage-inner {
   background-color: #45bbfe;
 }
 
-.format__item--csgo .info-block-pic {
-  filter: invert(69%) sepia(38%) saturate(3342%) hue-rotate(173deg) brightness(101%) contrast(99%);
+.format__item--csgo .info-block-img {
+  fill: #45bbfe;
 }
 
 .format__item--dota {
@@ -833,15 +833,15 @@ h3 {
 }
 
 .format__item--dota .format__stage::after {
-  filter: invert(39%) sepia(35%) saturate(4355%) hue-rotate(335deg) brightness(103%) contrast(107%);
+  fill: #fe4545;
 }
 
 .format__item--dota .format__stage-inner {
   background-color: #fe4545;
 }
 
-.format__item--dota .info-block-pic {
-  filter: invert(39%) sepia(35%) saturate(4355%) hue-rotate(335deg) brightness(103%) contrast(107%);
+.format__item--dota .info-block-img {
+  fill: #fe4545;
 }
 
 .format__item--lol {
@@ -858,15 +858,15 @@ h3 {
 }
 
 .format__item--lol .format__stage::after {
-  filter: invert(26%) sepia(71%) saturate(3016%) hue-rotate(290deg) brightness(92%) contrast(147%);
+  fill: #ff00e5;
 }
 
 .format__item--lol .format__stage-inner {
   background-color: #ff00e5;
 }
 
-.format__item--lol .info-block-pic {
-  filter: invert(26%) sepia(71%) saturate(3016%) hue-rotate(290deg) brightness(92%) contrast(147%);
+.format__item--lol .info-block-img {
+  fill: #ff00e5;
 }
 
 .format__spoiler {
@@ -1082,6 +1082,42 @@ details summary::-webkit-details-marker {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.addit-options__item--csgo {
+  border-color: #45bbfe;
+}
+
+.addit-options__item--csgo .addit-options__title {
+  color: #45bbfe;
+}
+
+.addit-options__item--csgo .addit-options__img {
+  fill: #45bbfe;
+}
+
+.addit-options__item--dota {
+  border-color: #fe4545;
+}
+
+.addit-options__item--dota .addit-options__title {
+  color: #fe4545;
+}
+
+.addit-options__item--dota .addit-options__img {
+  fill: #fe4545;
+}
+
+.addit-options__item--lol {
+  border-color: #ff00e5;
+}
+
+.addit-options__item--lol .addit-options__title {
+  color: #ff00e5;
+}
+
+.addit-options__item--lol .addit-options__img {
+  fill: #ff00e5;
 }
 
 .addit-options__pic {
@@ -1841,6 +1877,10 @@ details summary::-webkit-details-marker {
 
 .btn {
   transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
   display: block;
   color: #000000;
   background-color: #93c11a;

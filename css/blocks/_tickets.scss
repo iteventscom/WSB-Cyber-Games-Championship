@@ -97,6 +97,10 @@
 
 .btn {
   transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
   display: block;
   color: #000000;
   background-color: $green;
@@ -106,7 +110,6 @@
   font-size: 28px;
   border-radius: 0 0 0 20px;
   padding: 26px 0;
-
   &--buy {
     width: 100%;
     border: 3px solid $green;
@@ -115,5 +118,4 @@
       background-color: $yellow;
     }
   }
-
 }

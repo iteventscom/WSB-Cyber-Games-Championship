@@ -25,16 +25,14 @@
           border-color: $csgo;
         }
         &::after {
-          filter: invert(69%) sepia(38%) saturate(3342%) hue-rotate(173deg) brightness(101%)
-            contrast(99%);
+          fill: $csgo;
         }
       }
       & .format__stage-inner {
         background-color: $csgo;
       }
-      & .info-block-pic {
-        filter: invert(69%) sepia(38%) saturate(3342%) hue-rotate(173deg) brightness(101%)
-          contrast(99%);
+      & .info-block-img {
+        fill: $csgo;
       }
     }
     &--dota {
@@ -48,16 +46,14 @@
           border-color: $dota;
         }
         &::after {
-          filter: invert(39%) sepia(35%) saturate(4355%) hue-rotate(335deg) brightness(103%)
-            contrast(107%);
+          fill: $dota;
         }
       }
       & .format__stage-inner {
         background-color: $dota;
       }
-      & .info-block-pic {
-        filter: invert(39%) sepia(35%) saturate(4355%) hue-rotate(335deg) brightness(103%)
-          contrast(107%);
+      & .info-block-img {
+        fill: $dota;
       }
     }
     &--lol {
@@ -71,16 +67,14 @@
           border-color: $lol;
         }
         &::after {
-          filter: invert(26%) sepia(71%) saturate(3016%) hue-rotate(290deg) brightness(92%)
-            contrast(147%);
+          fill: $lol;
         }
       }
       & .format__stage-inner {
         background-color: $lol;
       }
-      & .info-block-pic {
-        filter: invert(26%) sepia(71%) saturate(3016%) hue-rotate(290deg) brightness(92%)
-          contrast(147%);
+      & .info-block-img {
+        fill: $lol;
       }
     }
   }
