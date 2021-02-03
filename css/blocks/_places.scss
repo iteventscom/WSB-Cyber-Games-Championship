@@ -21,26 +21,35 @@
     }
     &:hover {
       margin-top: -25px;
+      background-color: $yellow;
       &::after {
         position: absolute;
         left: 0;
-        bottom: 0;
+        bottom: -1px;
         content: '';
-        border-left: 10px solid #191919;
-        border-bottom: 10px solid #191919;
-        border-top: 10px solid #333333;
-        border-right: 10px solid #333333;
+        border-left: 16px solid #191919;
+        border-bottom: 16px solid #191919;
+        border-top: 16px solid $yellow;
+        border-right: 16px solid $yellow;
       }
       &::before {
         position: absolute;
         right: 0;
-        top: 0;
+        top: -1px;
         content: '';
-        border-right: 10px solid #191919;
-        border-top: 10px solid #191919;
-        border-bottom: 10px solid #333333;
-        border-left: 10px solid #333333;
+        border-right: 16px solid #191919;
+        border-top: 16px solid #191919;
+        border-bottom: 16px solid $yellow;
+        border-left: 16px solid $yellow;
       }
+      & .prises {
+        display: flex;
+      }
+      & .places__number,
+      .places__subtitle {
+        display: none;
+      }
+
     }
   }
   &__number {

@@ -1,0 +1,62 @@
+.prises {
+    display: none;
+  background-color: $yellow;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 16px;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: '';
+    height: 19px;
+    width: 35px;
+    left: -12px;
+    bottom: -3px;
+    background-color: $yellow;
+    transform: rotate(45deg);
+  }
+  &::before {
+    position: absolute;
+    content: '';
+    height: 19px;
+    width: 35px;
+    right: -12px;
+    top: -3px;
+    background-color: $yellow;
+    transform: rotate(45deg);
+  }
+  &__item {
+    width: 49%;
+    height: 49%;
+    position: relative;
+    font-size: 18px;
+  }
+  &__pic {
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  &__img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  &__title {
+    position: absolute;
+    padding: 0 10px;
+    color: #ffffff;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+  }
+}

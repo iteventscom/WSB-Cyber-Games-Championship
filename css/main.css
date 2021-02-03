@@ -1620,28 +1620,38 @@ details summary::-webkit-details-marker {
 
 .places__item:hover {
   margin-top: -25px;
+  background-color: #ffff00;
 }
 
 .places__item:hover::after {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   content: '';
-  border-left: 10px solid #191919;
-  border-bottom: 10px solid #191919;
-  border-top: 10px solid #333333;
-  border-right: 10px solid #333333;
+  border-left: 16px solid #191919;
+  border-bottom: 16px solid #191919;
+  border-top: 16px solid #ffff00;
+  border-right: 16px solid #ffff00;
 }
 
 .places__item:hover::before {
   position: absolute;
   right: 0;
-  top: 0;
+  top: -1px;
   content: '';
-  border-right: 10px solid #191919;
-  border-top: 10px solid #191919;
-  border-bottom: 10px solid #333333;
-  border-left: 10px solid #333333;
+  border-right: 16px solid #191919;
+  border-top: 16px solid #191919;
+  border-bottom: 16px solid #ffff00;
+  border-left: 16px solid #ffff00;
+}
+
+.places__item:hover .prises {
+  display: flex;
+}
+
+.places__item:hover .places__number,
+.places__item:hover .places__subtitle {
+  display: none;
 }
 
 .places__number {
@@ -1702,6 +1712,75 @@ details summary::-webkit-details-marker {
   width: 79px;
   left: -98px;
   top: -28px;
+}
+
+.prises {
+  display: none;
+  background-color: #ffff00;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 16px;
+  position: relative;
+}
+
+.prises::after {
+  position: absolute;
+  content: '';
+  height: 19px;
+  width: 35px;
+  left: -12px;
+  bottom: -3px;
+  background-color: #ffff00;
+  transform: rotate(45deg);
+}
+
+.prises::before {
+  position: absolute;
+  content: '';
+  height: 19px;
+  width: 35px;
+  right: -12px;
+  top: -3px;
+  background-color: #ffff00;
+  transform: rotate(45deg);
+}
+
+.prises__item {
+  width: 49%;
+  height: 49%;
+  position: relative;
+  font-size: 18px;
+}
+
+.prises__pic {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.prises__img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.prises__title {
+  position: absolute;
+  padding: 0 10px;
+  color: #ffffff;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
 }
 
 .participants {
