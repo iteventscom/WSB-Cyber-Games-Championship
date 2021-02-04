@@ -1,13 +1,33 @@
 .hero {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
   &-section {
-    // height: 100vh;
+    position: relative;
+    height: 100vh;
+    height: calc(90vh - 110px);
     margin: 0 auto;
     margin-top: 44px;
     padding-bottom: 44px;
     margin-bottom: 64px;
     position: relative;
     width: 1440px;
-    background: bottom -10px right / contain no-repeat url('https://it-events.com/system/event_photos/imgs/000/013/286/original/hero__bg.png');
+    background: right bottom / 50% auto no-repeat
+      url('https://it-events.com/system/event_photos/imgs/000/013/286/original/hero__bg.png');
+
+    &::before {
+      position: absolute;
+      content: '';
+      transition: 0.5s;
+      z-index: 10;
+      background-color: $green;
+      border-radius: 4px 0 0 4px;
+      height: 8px;
+      width: 50%;
+      right: 0;
+      bottom: 5px;
+    }
+
     &--main {
       background: bottom -10px right / contain no-repeat url('https://it-events.com/system/attachments/files/000/002/106/original/hero__bg.png');
     }
@@ -21,6 +41,30 @@
     &--lol {
       background: bottom -10px right 150px / contain no-repeat url('https://it-events.com/system/event_photos/imgs/000/013/287/original/hero__bg--lol.png');
     }
+  }
+  &__content {
+    width: 50%;
+    margin-left: 132px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__bg {
+    width: 50%;
+    display: flex;
+    background: bottom -10px right / contain no-repeat url('https://it-events.com/system/event_photos/imgs/000/013/286/original/hero__bg.png');
+  }
+  &__pic {
+    display: flex;
+    align-items: flex-end;
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+  }
+  &__img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
   }
   &__title {
     font-weight: bold;
@@ -54,13 +98,16 @@
     }
   }
   &__line {
+    align-self: flex-end;
     transition: 0.5s;
-    position: absolute;
+    width: 100%;
+    display: block;
+    // position: absolute;
     z-index: 10;
     background-color: $green;
     border-radius: 4px 0 0 4px;
     height: 8px;
-    width: 50%;
+    // width: 50%;
     right: 0;
     bottom: 0px;
     &--main {
