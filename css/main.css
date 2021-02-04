@@ -671,6 +671,7 @@ h3 {
   position: relative;
   height: 100vh;
   height: calc(90vh - 110px);
+  max-height: 1080px;
   margin: 0 auto;
   margin-top: 44px;
   padding-bottom: 44px;
@@ -678,6 +679,12 @@ h3 {
   position: relative;
   width: 1440px;
   background: right bottom/50% auto no-repeat url("https://it-events.com/system/event_photos/imgs/000/013/286/original/hero__bg.png");
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    height: 100%;
+  }
 }
 
 .hero-section::before {
