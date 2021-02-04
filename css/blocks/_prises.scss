@@ -1,13 +1,14 @@
 .prises {
-    display: none;
-  background-color: $yellow;
+  display: none;
   flex: 1;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 20px 16px;
   position: relative;
+
   &::after {
     position: absolute;
+    z-index: 10;
     content: '';
     height: 19px;
     width: 35px;
@@ -18,12 +19,13 @@
   }
   &::before {
     position: absolute;
+    z-index: 10;
     content: '';
     height: 19px;
     width: 35px;
     right: -12px;
     top: -3px;
-    background-color: $yellow;
+    background-color:  $yellow;
     transform: rotate(45deg);
   }
   &__item {

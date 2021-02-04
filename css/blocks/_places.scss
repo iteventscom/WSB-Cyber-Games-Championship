@@ -1,7 +1,6 @@
 .places {
   display: flex;
   justify-content: space-between;
-  //   align-items: sr;
 
   &__item {
     width: 32%;
@@ -13,34 +12,28 @@
     color: $yellow;
     position: relative;
 
-    &--2nd {
-      color: #c8c8c8;
-    }
-    &--3nd {
-      color: #a05700;
-    }
     &:hover {
-      margin-top: -25px;
+      margin-top: -32px;
       background-color: $yellow;
       &::after {
         position: absolute;
         left: 0;
-        bottom: -1px;
+        bottom: 0px;
         content: '';
         border-left: 16px solid #191919;
         border-bottom: 16px solid #191919;
-        border-top: 16px solid $yellow;
-        border-right: 16px solid $yellow;
+        border-top: 16px solid transparent;
+        border-right: 16px solid transparent;
       }
       &::before {
         position: absolute;
         right: 0;
-        top: -1px;
+        top: 0px;
         content: '';
         border-right: 16px solid #191919;
         border-top: 16px solid #191919;
-        border-bottom: 16px solid $yellow;
-        border-left: 16px solid $yellow;
+        border-bottom: 16px solid transparent;
+        border-left: 16px solid transparent;
       }
       & .prises {
         display: flex;
@@ -49,7 +42,35 @@
       .places__subtitle {
         display: none;
       }
-
+    }
+    &--2nd {
+      color: #c8c8c8;
+      &:hover {
+        background-color: #c8c8c8;
+      }
+      & .prises {
+        &::after,
+        &::before {
+          background-color: #c8c8c8;
+        }
+      }
+      & .prises__item {
+        background-color: #a4a4a4;
+      }
+    }
+    &--3nd {
+      color: #a05700;&:hover {
+        background-color: #A05700;
+      }
+      & .prises {
+        &::after,
+        &::before {
+          background-color: #A05700;
+        }
+      }
+      & .prises__item {
+        background-color: #8E4D00;
+      }
     }
   }
   &__number {

@@ -1610,39 +1610,31 @@ details summary::-webkit-details-marker {
   position: relative;
 }
 
-.places__item--2nd {
-  color: #c8c8c8;
-}
-
-.places__item--3nd {
-  color: #a05700;
-}
-
 .places__item:hover {
-  margin-top: -25px;
+  margin-top: -32px;
   background-color: #ffff00;
 }
 
 .places__item:hover::after {
   position: absolute;
   left: 0;
-  bottom: -1px;
+  bottom: 0px;
   content: '';
   border-left: 16px solid #191919;
   border-bottom: 16px solid #191919;
-  border-top: 16px solid #ffff00;
-  border-right: 16px solid #ffff00;
+  border-top: 16px solid transparent;
+  border-right: 16px solid transparent;
 }
 
 .places__item:hover::before {
   position: absolute;
   right: 0;
-  top: -1px;
+  top: 0px;
   content: '';
   border-right: 16px solid #191919;
   border-top: 16px solid #191919;
-  border-bottom: 16px solid #ffff00;
-  border-left: 16px solid #ffff00;
+  border-bottom: 16px solid transparent;
+  border-left: 16px solid transparent;
 }
 
 .places__item:hover .prises {
@@ -1652,6 +1644,38 @@ details summary::-webkit-details-marker {
 .places__item:hover .places__number,
 .places__item:hover .places__subtitle {
   display: none;
+}
+
+.places__item--2nd {
+  color: #c8c8c8;
+}
+
+.places__item--2nd:hover {
+  background-color: #c8c8c8;
+}
+
+.places__item--2nd .prises::after, .places__item--2nd .prises::before {
+  background-color: #c8c8c8;
+}
+
+.places__item--2nd .prises__item {
+  background-color: #a4a4a4;
+}
+
+.places__item--3nd {
+  color: #a05700;
+}
+
+.places__item--3nd:hover {
+  background-color: #A05700;
+}
+
+.places__item--3nd .prises::after, .places__item--3nd .prises::before {
+  background-color: #A05700;
+}
+
+.places__item--3nd .prises__item {
+  background-color: #8E4D00;
 }
 
 .places__number {
@@ -1716,7 +1740,6 @@ details summary::-webkit-details-marker {
 
 .prises {
   display: none;
-  background-color: #ffff00;
   flex: 1;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -1726,6 +1749,7 @@ details summary::-webkit-details-marker {
 
 .prises::after {
   position: absolute;
+  z-index: 10;
   content: '';
   height: 19px;
   width: 35px;
@@ -1737,6 +1761,7 @@ details summary::-webkit-details-marker {
 
 .prises::before {
   position: absolute;
+  z-index: 10;
   content: '';
   height: 19px;
   width: 35px;
