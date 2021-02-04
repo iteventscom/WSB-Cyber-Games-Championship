@@ -35,6 +35,9 @@ $lol: #ff00e5;
   letter-spacing: 0.05em;
   line-height: 1;
   margin-bottom: 6px;
+  
+  animation: slideInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s;
 
   &::before {
     content: '';

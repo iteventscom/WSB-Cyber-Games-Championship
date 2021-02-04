@@ -435,6 +435,9 @@ h3 {
   letter-spacing: 0.05em;
   line-height: 1;
   margin-bottom: 6px;
+  animation: slideInLeft;
+  /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s;
 }
 
 .section__title::before {
@@ -761,6 +764,9 @@ h3 {
   overflow: hidden;
   margin-right: 75px;
   background-color: #333333;
+  animation: headShake;
+  /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s;
 }
 
 .about__pic {
@@ -772,6 +778,9 @@ h3 {
 .about__description {
   letter-spacing: 0.24px;
   line-height: 27px;
+  animation: headShakeReWers;
+  /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s;
 }
 
 .format {
