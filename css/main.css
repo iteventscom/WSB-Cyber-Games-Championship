@@ -560,7 +560,7 @@ h3 {
 }
 
 .button__hero-game--csgo {
-  background: center 40%/80% no-repeat url("https://it-events.com/system/event_photos/imgs/000/013/289/original/hero__bg--csgo.png");
+  background: center 40%/80% no-repeat url("https://it-events.com/system/attachments/files/000/002/094/original/CSGO_logo.svg");
 }
 
 .button__hero-game--csgo.button__active {
@@ -569,7 +569,7 @@ h3 {
 }
 
 .button__hero-game--dota {
-  background: center 50%/80% no-repeat url("https://it-events.com/system/event_photos/imgs/000/013/288/original/hero__bg--dota.png");
+  background: center 50%/80% no-repeat url("https://it-events.com/system/attachments/files/000/002/089/original/Dota2_logo.svg");
 }
 
 .button__hero-game--dota.button__active {
@@ -578,7 +578,7 @@ h3 {
 }
 
 .button__hero-game--lol {
-  background: center 50%/80% no-repeat url("https://it-events.com/system/event_photos/imgs/000/013/288/original/hero__bg--dota.png");
+  background: center 50%/80% no-repeat url("https://it-events.com/system/attachments/files/000/002/085/original/LoL_logo.svg");
 }
 
 .button__hero-game--lol.button__active {
