@@ -59,17 +59,18 @@
 
     &-main {
       width: 100px;
-      background: center no-repeat url('./../assets/img/dots__btn--white.svg');
+      background: center / 36px no-repeat
+        url('https://it-events.com/system/attachments/files/000/002/088/original/dots__btn--white.svg');
       &:hover,
       &.button__active {
-        background: center no-repeat url('./../assets/img/dots__btn.svg');
+        background-image: url('https://it-events.com/system/attachments/files/000/002/087/original/dots__btn.svg');
         background-color: $green;
       }
     }
     &-game {
       width: 142px;
       &--csgo {
-        background: center 40% / 80% no-repeat url('./../assets/img/CSGO_logo.svg');
+        background: center 40% / 80% no-repeat url('https://it-events.com/system/event_photos/imgs/000/013/289/original/hero__bg--csgo.png');
 
         &.button__active {
           background-color: $csgo;
@@ -77,7 +78,7 @@
         }
       }
       &--dota {
-        background: center 50% / 80% no-repeat url('./../assets/img/Dota2_logo.svg');
+        background: center 50% / 80% no-repeat url('https://it-events.com/system/event_photos/imgs/000/013/288/original/hero__bg--dota.png');
 
         &.button__active {
           background-color: $dota;
@@ -85,7 +86,7 @@
         }
       }
       &--lol {
-        background: center 50% / 80% no-repeat url('./../assets/img/LoL_logo.svg');
+        background: center 50% / 80% no-repeat url('https://it-events.com/system/event_photos/imgs/000/013/288/original/hero__bg--dota.png');
 
         &.button__active {
           background-color: $lol;

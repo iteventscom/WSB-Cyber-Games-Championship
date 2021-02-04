@@ -13,36 +13,36 @@ html {
 }
 
 /* Sections
-     ========================================================================== */
+       ========================================================================== */
 /**
-   * Remove the margin in all browsers.
-   */
+     * Remove the margin in all browsers.
+     */
 body {
   margin: 0;
 }
 
 /**
-   * Render the `main` element consistently in IE.
-   */
+     * Render the `main` element consistently in IE.
+     */
 main {
   display: block;
 }
 
 /**
-   * Correct the font size and margin on `h1` elements within `section` and
-   * `article` contexts in Chrome, Firefox, and Safari.
-   */
+     * Correct the font size and margin on `h1` elements within `section` and
+     * `article` contexts in Chrome, Firefox, and Safari.
+     */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
 /* Grouping content
-     ========================================================================== */
+       ========================================================================== */
 /**
-   * 1. Add the correct box sizing in Firefox.
-   * 2. Show the overflow in Edge and IE.
-   */
+     * 1. Add the correct box sizing in Firefox.
+     * 2. Show the overflow in Edge and IE.
+     */
 hr {
   box-sizing: content-box;
   /* 1 */
@@ -53,9 +53,9 @@ hr {
 }
 
 /**
-   * 1. Correct the inheritance and scaling of font size in all browsers.
-   * 2. Correct the odd `em` font sizing in all browsers.
-   */
+     * 1. Correct the inheritance and scaling of font size in all browsers.
+     * 2. Correct the odd `em` font sizing in all browsers.
+     */
 pre {
   font-family: monospace, monospace;
   /* 1 */
@@ -64,18 +64,18 @@ pre {
 }
 
 /* Text-level semantics
-     ========================================================================== */
+       ========================================================================== */
 /**
-   * Remove the gray background on active links in IE 10.
-   */
+     * Remove the gray background on active links in IE 10.
+     */
 a {
   background-color: transparent;
 }
 
 /**
-   * 1. Remove the bottom border in Chrome 57-
-   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
-   */
+     * 1. Remove the bottom border in Chrome 57-
+     * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+     */
 abbr[title] {
   border-bottom: none;
   /* 1 */
@@ -86,17 +86,17 @@ abbr[title] {
 }
 
 /**
-   * Add the correct font weight in Chrome, Edge, and Safari.
-   */
+     * Add the correct font weight in Chrome, Edge, and Safari.
+     */
 b,
 strong {
   font-weight: bolder;
 }
 
 /**
-   * 1. Correct the inheritance and scaling of font size in all browsers.
-   * 2. Correct the odd `em` font sizing in all browsers.
-   */
+     * 1. Correct the inheritance and scaling of font size in all browsers.
+     * 2. Correct the odd `em` font sizing in all browsers.
+     */
 code,
 kbd,
 samp {
@@ -107,16 +107,16 @@ samp {
 }
 
 /**
-   * Add the correct font size in all browsers.
-   */
+     * Add the correct font size in all browsers.
+     */
 small {
   font-size: 80%;
 }
 
 /**
-   * Prevent `sub` and `sup` elements from affecting the line height in
-   * all browsers.
-   */
+     * Prevent `sub` and `sup` elements from affecting the line height in
+     * all browsers.
+     */
 sub,
 sup {
   font-size: 75%;
@@ -134,20 +134,20 @@ sup {
 }
 
 /* Embedded content
-     ========================================================================== */
+       ========================================================================== */
 /**
-   * Remove the border on images inside links in IE 10.
-   */
+     * Remove the border on images inside links in IE 10.
+     */
 img {
   border-style: none;
 }
 
 /* Forms
-     ========================================================================== */
+       ========================================================================== */
 /**
-   * 1. Change the font styles in all browsers.
-   * 2. Remove the margin in Firefox and Safari.
-   */
+     * 1. Change the font styles in all browsers.
+     * 2. Remove the margin in Firefox and Safari.
+     */
 button,
 input,
 optgroup,
@@ -164,9 +164,9 @@ textarea {
 }
 
 /**
-   * Show the overflow in IE.
-   * 1. Show the overflow in Edge.
-   */
+     * Show the overflow in IE.
+     * 1. Show the overflow in Edge.
+     */
 button,
 input {
   /* 1 */
@@ -174,9 +174,9 @@ input {
 }
 
 /**
-   * Remove the inheritance of text transform in Edge, Firefox, and IE.
-   * 1. Remove the inheritance of text transform in Firefox.
-   */
+     * Remove the inheritance of text transform in Edge, Firefox, and IE.
+     * 1. Remove the inheritance of text transform in Firefox.
+     */
 button,
 select {
   /* 1 */
@@ -184,49 +184,49 @@ select {
 }
 
 /**
-   * Correct the inability to style clickable types in iOS and Safari.
-   */
+     * Correct the inability to style clickable types in iOS and Safari.
+     */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type='button'],
+[type='reset'],
+[type='submit'] {
   -webkit-appearance: button;
 }
 
 /**
-   * Remove the inner border and padding in Firefox.
-   */
+     * Remove the inner border and padding in Firefox.
+     */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
 /**
-   * Restore the focus styles unset by the previous rule.
-   */
+     * Restore the focus styles unset by the previous rule.
+     */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
 /**
-   * Correct the padding in Firefox.
-   */
+     * Correct the padding in Firefox.
+     */
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
 
 /**
-   * 1. Correct the text wrapping in Edge and IE.
-   * 2. Correct the color inheritance from `fieldset` elements in IE.
-   * 3. Remove the padding so developers are not caught out when they zero out
-   *    `fieldset` elements in all browsers.
-   */
+     * 1. Correct the text wrapping in Edge and IE.
+     * 2. Correct the color inheritance from `fieldset` elements in IE.
+     * 3. Remove the padding so developers are not caught out when they zero out
+     *    `fieldset` elements in all browsers.
+     */
 legend {
   box-sizing: border-box;
   /* 1 */
@@ -243,25 +243,25 @@ legend {
 }
 
 /**
-   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
-   */
+     * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+     */
 progress {
   vertical-align: baseline;
 }
 
 /**
-   * Remove the default vertical scrollbar in IE 10+.
-   */
+     * Remove the default vertical scrollbar in IE 10+.
+     */
 textarea {
   overflow: auto;
 }
 
 /**
-   * 1. Add the correct box sizing in IE 10.
-   * 2. Remove the padding in IE 10.
-   */
-[type="checkbox"],
-[type="radio"] {
+     * 1. Add the correct box sizing in IE 10.
+     * 2. Remove the padding in IE 10.
+     */
+[type='checkbox'],
+[type='radio'] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -269,18 +269,18 @@ textarea {
 }
 
 /**
-   * Correct the cursor style of increment and decrement buttons in Chrome.
-   */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+     * Correct the cursor style of increment and decrement buttons in Chrome.
+     */
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
   height: auto;
 }
 
 /**
-   * 1. Correct the odd appearance in Chrome and Safari.
-   * 2. Correct the outline style in Safari.
-   */
-[type="search"] {
+     * 1. Correct the odd appearance in Chrome and Safari.
+     * 2. Correct the outline style in Safari.
+     */
+[type='search'] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -288,16 +288,16 @@ textarea {
 }
 
 /**
-   * Remove the inner padding in Chrome and Safari on macOS.
-   */
-[type="search"]::-webkit-search-decoration {
+     * Remove the inner padding in Chrome and Safari on macOS.
+     */
+[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
 /**
-   * 1. Correct the inability to style clickable types in iOS and Safari.
-   * 2. Change font properties to `inherit` in Safari.
-   */
+     * 1. Correct the inability to style clickable types in iOS and Safari.
+     * 2. Change font properties to `inherit` in Safari.
+     */
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   /* 1 */
@@ -306,33 +306,33 @@ textarea {
 }
 
 /* Interactive
-     ========================================================================== */
+       ========================================================================== */
 /*
-   * Add the correct display in Edge, IE 10+, and Firefox.
-   */
+     * Add the correct display in Edge, IE 10+, and Firefox.
+     */
 details {
   display: block;
 }
 
 /*
-   * Add the correct display in all browsers.
-   */
+     * Add the correct display in all browsers.
+     */
 summary {
   display: list-item;
 }
 
 /* Misc
-     ========================================================================== */
+       ========================================================================== */
 /**
-   * Add the correct display in IE 10+.
-   */
+     * Add the correct display in IE 10+.
+     */
 template {
   display: none;
 }
 
 /**
-   * Add the correct display in IE 10.
-   */
+     * Add the correct display in IE 10.
+     */
 [hidden] {
   display: none;
 }
@@ -417,10 +417,6 @@ h3 {
   font: 500 24px/1.2 'Roboto', 'Segoe UI', sans-serif;
 }
 
-.section--invisible {
-  display: none;
-}
-
 .section-title {
   text-align: center;
   margin-bottom: 64px;
@@ -453,34 +449,18 @@ h3 {
   margin-bottom: 108px;
 }
 
-.section__title--csgo {
-  color: #45bbfe;
-}
-
-.section__title--csgo::before {
-  background-color: #45bbfe;
-}
-
-.section__title--dota {
-  color: #fe4545;
-}
-
-.section__title--dota::before {
-  background-color: #fe4545;
-}
-
-.section__title--lol {
-  color: #ff00e5;
-}
-
-.section__title--lol::before {
-  background-color: #ff00e5;
-}
-
 .section__subtitle {
   text-align: left;
   margin-bottom: 28px;
   font-size: 21px;
+}
+
+.section--red {
+  background-color: #e73a47;
+}
+
+.section--bg--blue a {
+  color: white;
 }
 
 .button {
@@ -494,33 +474,6 @@ h3 {
   transition: 0.4s;
   white-space: nowrap;
   text-align: center;
-}
-
-.button--csgo {
-  border-color: #45bbfe;
-  color: #45bbfe;
-}
-
-.button--csgo.button:hover {
-  background-color: #45bbfe;
-}
-
-.button--dota {
-  border-color: #fe4545;
-  color: #fe4545;
-}
-
-.button--dota.button:hover {
-  background-color: #fe4545;
-}
-
-.button--lol {
-  border-color: #ff00e5;
-  color: #ff00e5;
-}
-
-.button--lol.button:hover {
-  background-color: #ff00e5;
 }
 
 .button:hover {
@@ -547,11 +500,14 @@ h3 {
 
 .button__hero-main {
   width: 100px;
-  background: center/36px no-repeat url("https://it-events.com/system/attachments/files/000/002/088/original/dots__btn--white.svg");
+  background: center / 36px no-repeat
+    url('https://it-events.com/system/attachments/files/000/002/088/original/dots__btn--white.svg');
 }
 
-.button__hero-main:hover, .button__hero-main.button__active {
-  background-image: url("https://it-events.com/system/attachments/files/000/002/087/original/dots__btn.svg");
+.button__hero-main:hover,
+.button__hero-main.button__active {
+  background: center no-repeat
+    url('https://it-events.com/system/attachments/files/000/002/087/original/dots__btn.svg');
   background-color: #93c11a;
 }
 
@@ -560,7 +516,8 @@ h3 {
 }
 
 .button__hero-game--csgo {
-  background: center 40%/80% no-repeat url("https://it-events.com/system/event_photos/imgs/000/013/289/original/hero__bg--csgo.png");
+  background: center 40%/80% no-repeat
+    url('https://it-events.com/system/attachments/files/000/002/094/original/CSGO_logo.svg');
 }
 
 .button__hero-game--csgo.button__active {
@@ -569,7 +526,8 @@ h3 {
 }
 
 .button__hero-game--dota {
-  background: center 50%/80% no-repeat url("https://it-events.com/system/event_photos/imgs/000/013/288/original/hero__bg--dota.png");
+  background: center 50%/80% no-repeat
+    url('https://it-events.com/system/attachments/files/000/002/089/original/Dota2_logo.svg');
 }
 
 .button__hero-game--dota.button__active {
@@ -578,7 +536,8 @@ h3 {
 }
 
 .button__hero-game--lol {
-  background: center 50%/80% no-repeat url("https://it-events.com/system/event_photos/imgs/000/013/288/original/hero__bg--dota.png");
+  background: center 50%/80% no-repeat
+    url('https://it-events.com/system/attachments/files/000/002/085/original/LoL_logo.svg');
 }
 
 .button__hero-game--lol.button__active {
@@ -665,23 +624,24 @@ h3 {
   margin-bottom: 64px;
   position: relative;
   width: 1440px;
-  background: bottom -10px right/contain no-repeat url("https://it-events.com/system/event_photos/imgs/000/013/286/original/hero__bg.png");
+  background: bottom -10px right/contain no-repeat url('https://it-events.com/system/event_photos/imgs/000/013/286/original/hero__bg.png');
 }
 
 .hero-section--main {
-  background: bottom -10px right/contain no-repeat url("https://it-events.com/system/attachments/files/000/002/106/original/hero__bg.png");
+  background: bottom -10px right/contain no-repeat url('https://it-events.com/system/attachments/files/000/002/106/original/hero__bg.png');
 }
 
 .hero-section--csgo {
-  background: bottom -10px right -203px/79% no-repeat url("https://it-events.com/system/event_photos/imgs/000/013/289/original/hero__bg--csgo.png");
+  background: bottom -10px right -203px/79% no-repeat
+    url('https://it-events.com/system/event_photos/imgs/000/013/289/original/hero__bg--csgo.png');
 }
 
 .hero-section--dota {
-  background: bottom -10px right 30px/contain no-repeat url("https://it-events.com/system/event_photos/imgs/000/013/288/original/hero__bg--dota.png");
+  background: bottom -10px right 30px / contain no-repeat url('https://it-events.com/system/event_photos/imgs/000/013/288/original/hero__bg--dota.png');
 }
 
 .hero-section--lol {
-  background: bottom -10px right 150px/contain no-repeat url("https://it-events.com/system/event_photos/imgs/000/013/287/original/hero__bg--lol.png");
+  background: bottom -10px right 150px / contain no-repeat url('https://it-events.com/system/event_photos/imgs/000/013/287/original/hero__bg--lol.png');
 }
 
 .hero__title {
@@ -707,18 +667,6 @@ h3 {
   font-size: 24px;
   text-transform: uppercase;
   margin-bottom: 80px;
-}
-
-.hero__subtitle--csgo {
-  color: #45bbfe;
-}
-
-.hero__subtitle--dota {
-  color: #fe4545;
-}
-
-.hero__subtitle--lol {
-  color: #ff00e5;
 }
 
 .hero__line {
@@ -794,79 +742,8 @@ h3 {
   margin-right: 0;
 }
 
-.format__item--csgo {
-  border-color: #45bbfe;
-}
-
-.format__item--csgo .info-block-title {
-  color: #45bbfe;
-}
-
-.format__item--csgo .format__stage::before {
-  background-color: #45bbfe;
-  border-color: #45bbfe;
-}
-
-.format__item--csgo .format__stage::after {
-  fill: #45bbfe;
-}
-
-.format__item--csgo .format__stage-inner {
-  background-color: #45bbfe;
-}
-
-.format__item--csgo .info-block-img {
-  fill: #45bbfe;
-}
-
-.format__item--dota {
-  border-color: #fe4545;
-}
-
-.format__item--dota .info-block-title {
-  color: #fe4545;
-}
-
-.format__item--dota .format__stage::before {
-  background-color: #fe4545;
-  border-color: #fe4545;
-}
-
-.format__item--dota .format__stage::after {
-  fill: #fe4545;
-}
-
-.format__item--dota .format__stage-inner {
-  background-color: #fe4545;
-}
-
-.format__item--dota .info-block-img {
-  fill: #fe4545;
-}
-
-.format__item--lol {
-  border-color: #ff00e5;
-}
-
-.format__item--lol .info-block-title {
-  color: #ff00e5;
-}
-
-.format__item--lol .format__stage::before {
-  background-color: #ff00e5;
-  border-color: #ff00e5;
-}
-
-.format__item--lol .format__stage::after {
-  fill: #ff00e5;
-}
-
-.format__item--lol .format__stage-inner {
-  background-color: #ff00e5;
-}
-
-.format__item--lol .info-block-img {
-  fill: #ff00e5;
+.format__extra {
+  grid-row-end: span 4;
 }
 
 .format__spoiler {
@@ -1082,42 +959,6 @@ details summary::-webkit-details-marker {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.addit-options__item--csgo {
-  border-color: #45bbfe;
-}
-
-.addit-options__item--csgo .addit-options__title {
-  color: #45bbfe;
-}
-
-.addit-options__item--csgo .addit-options__img {
-  fill: #45bbfe;
-}
-
-.addit-options__item--dota {
-  border-color: #fe4545;
-}
-
-.addit-options__item--dota .addit-options__title {
-  color: #fe4545;
-}
-
-.addit-options__item--dota .addit-options__img {
-  fill: #fe4545;
-}
-
-.addit-options__item--lol {
-  border-color: #ff00e5;
-}
-
-.addit-options__item--lol .addit-options__title {
-  color: #ff00e5;
-}
-
-.addit-options__item--lol .addit-options__img {
-  fill: #ff00e5;
 }
 
 .addit-options__pic {
@@ -1351,7 +1192,7 @@ details summary::-webkit-details-marker {
   display: block;
   width: 60px;
   height: 60px;
-  background-image: url(https://ostconf.com/i/blocks/social/twitter.svg);
+  background-image: url(https://it-events.com/i/blocks/social/twitter.svg);
   background-color: #ed4963;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -1451,7 +1292,8 @@ details summary::-webkit-details-marker {
   transform: translate(-50%, -100%);
   width: 84px;
   height: 34px;
-  background: center/contain no-repeat url("https://it-events.com/system/attachments/files/000/002/094/original/CSGO_logo.svg");
+  background: center/contain no-repeat
+    url('https://it-events.com/system/attachments/files/000/002/094/original/CSGO_logo.svg');
 }
 
 .timetable__table-col--dota::after {
@@ -1462,7 +1304,8 @@ details summary::-webkit-details-marker {
   transform: translate(-50%, -100%);
   width: 84px;
   height: 34px;
-  background: center/contain no-repeat url("https://it-events.com/system/attachments/files/000/002/089/original/Dota2_logo.svg");
+  background: center/contain no-repeat
+    url('https://it-events.com/system/attachments/files/000/002/089/original/Dota2_logo.svg');
 }
 
 .timetable__table-col--lol::after {
@@ -1473,7 +1316,8 @@ details summary::-webkit-details-marker {
   transform: translate(-50%, -100%);
   width: 84px;
   height: 34px;
-  background: center/contain no-repeat url("https://it-events.com/system/attachments/files/000/002/085/original/LoL_logo.svg");
+  background: center/contain no-repeat
+    url('https://it-events.com/system/attachments/files/000/002/085/original/LoL_logo.svg');
 }
 
 .timetable__table-row {
@@ -1610,72 +1454,38 @@ details summary::-webkit-details-marker {
   position: relative;
 }
 
-.places__item:hover {
-  margin-top: -32px;
-  background-color: #ffff00;
-}
-
-.places__item:hover::after {
-  position: absolute;
-  left: 0;
-  bottom: 0px;
-  content: '';
-  border-left: 16px solid #191919;
-  border-bottom: 16px solid #191919;
-  border-top: 16px solid transparent;
-  border-right: 16px solid transparent;
-}
-
-.places__item:hover::before {
-  position: absolute;
-  right: 0;
-  top: 0px;
-  content: '';
-  border-right: 16px solid #191919;
-  border-top: 16px solid #191919;
-  border-bottom: 16px solid transparent;
-  border-left: 16px solid transparent;
-}
-
-.places__item:hover .prises {
-  display: flex;
-}
-
-.places__item:hover .places__number,
-.places__item:hover .places__subtitle {
-  display: none;
-}
-
 .places__item--2nd {
   color: #c8c8c8;
-}
-
-.places__item--2nd:hover {
-  background-color: #c8c8c8;
-}
-
-.places__item--2nd .prises::after, .places__item--2nd .prises::before {
-  background-color: #c8c8c8;
-}
-
-.places__item--2nd .prises__item {
-  background-color: #a4a4a4;
 }
 
 .places__item--3nd {
   color: #a05700;
 }
 
-.places__item--3nd:hover {
-  background-color: #A05700;
+.places__item:hover {
+  margin-top: -25px;
 }
 
-.places__item--3nd .prises::after, .places__item--3nd .prises::before {
-  background-color: #A05700;
+.places__item:hover::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+  border-left: 10px solid #191919;
+  border-bottom: 10px solid #191919;
+  border-top: 10px solid #333333;
+  border-right: 10px solid #333333;
 }
 
-.places__item--3nd .prises__item {
-  background-color: #8E4D00;
+.places__item:hover::before {
+  position: absolute;
+  right: 0;
+  top: 0;
+  content: '';
+  border-right: 10px solid #191919;
+  border-top: 10px solid #191919;
+  border-bottom: 10px solid #333333;
+  border-left: 10px solid #333333;
 }
 
 .places__number {
@@ -1736,76 +1546,6 @@ details summary::-webkit-details-marker {
   width: 79px;
   left: -98px;
   top: -28px;
-}
-
-.prises {
-  display: none;
-  flex: 1;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 20px 16px;
-  position: relative;
-}
-
-.prises::after {
-  position: absolute;
-  z-index: 10;
-  content: '';
-  height: 19px;
-  width: 35px;
-  left: -12px;
-  bottom: -3px;
-  background-color: #ffff00;
-  transform: rotate(45deg);
-}
-
-.prises::before {
-  position: absolute;
-  z-index: 10;
-  content: '';
-  height: 19px;
-  width: 35px;
-  right: -12px;
-  top: -3px;
-  background-color: #ffff00;
-  transform: rotate(45deg);
-}
-
-.prises__item {
-  width: 49%;
-  height: 49%;
-  position: relative;
-  font-size: 18px;
-}
-
-.prises__pic {
-  display: block;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
-
-.prises__img {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-}
-
-.prises__title {
-  position: absolute;
-  padding: 0 10px;
-  color: #ffffff;
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  top: 50%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
 }
 
 .participants {
@@ -1981,10 +1721,6 @@ details summary::-webkit-details-marker {
 
 .btn {
   transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
   display: block;
   color: #000000;
   background-color: #93c11a;
@@ -2085,11 +1821,11 @@ details summary::-webkit-details-marker {
   border: none;
   line-height: normal;
   letter-spacing: -1.2px;
-  color: #A4A4A4;
+  color: #a4a4a4;
 }
 
 .subscribe-form-item__control::placeholder {
-  color: #A4A4A4;
+  color: #a4a4a4;
 }
 
 .subscribe-form-item__label {
@@ -2151,9 +1887,7 @@ details summary::-webkit-details-marker {
   background-image: url(https://it-events.com/i/blocks/social/telegram.svg);
 }
 
-.socials-srting-block__list
-.socials-srting-block__item
-+ .social__item-text-block {
+.socials-srting-block__list .socials-srting-block__item + .social__item-text-block {
   width: auto;
   background-image: none;
 }
