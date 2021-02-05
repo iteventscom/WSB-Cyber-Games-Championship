@@ -3586,6 +3586,32 @@
   -webkit-animation-name: slideInLeft;
   animation-name: slideInLeft;
 }
+@-webkit-keyframes slideInLeftTin {
+    0% {
+      -webkit-transform: translate3d(-10%, 0, 0);
+      transform: translate3d(-10%, 0, 0);
+      visibility: visible;
+    }
+    to {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+    }
+  }
+  @keyframes slideInLeftTin {
+    0% {
+      -webkit-transform: translate3d(-10%, 0, 0);
+      transform: translate3d(-10%, 0, 0);
+      visibility: visible;
+    }
+    to {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+    }
+  }
+  .animate__slideInLeftTin {
+    -webkit-animation-name: slideInLeftTin;
+    animation-name: slideInLeftTin;
+  }
 @-webkit-keyframes slideInRight {
   0% {
     -webkit-transform: translate3d(100%, 0, 0);
@@ -3612,6 +3638,34 @@
   -webkit-animation-name: slideInRight;
   animation-name: slideInRight;
 }
+
+@-webkit-keyframes slideInRightTin {
+    0% {
+      -webkit-transform: translate3d(10%, 0, 0);
+      transform: translate3d(10%, 0, 0);
+      visibility: visible;
+    }
+    to {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+    }
+  }
+  @keyframes slideInRightTin {
+    0% {
+      -webkit-transform: translate3d(10%, 0, 0);
+      transform: translate3d(10%, 0, 0);
+      visibility: visible;
+    }
+    to {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+    }
+  }
+  .animate__slideInRightTin {
+    -webkit-animation-name: slideInRightTin;
+    animation-name: slideInRightTin;
+  }
+
 @-webkit-keyframes slideInUp {
   0% {
     -webkit-transform: translate3d(0, 100%, 0);
@@ -3742,3 +3796,5 @@
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
 }
+
+

@@ -1,5 +1,5 @@
 const hero__btns = document.querySelector('.hero__btns');
-const hero__line = document.querySelector('.hero__line');
+// const hero__line = document.querySelector('.hero__line');
 const hero__section = document.querySelector('.hero-section');
 const section__titles = document.querySelectorAll('.section__title');
 const buttons = document.querySelectorAll('.button');
@@ -24,8 +24,8 @@ function changeBtn(btn) {
   });
   btn.classList.add('button__active');
 
-  hero__line.className = 'hero__line';
-  hero__line.classList.add(`hero__line--${btn.id}`);
+  // hero__line.className = 'hero__line';
+  // hero__line.classList.add(`hero__line--${btn.id}`);
 
   hero__section.className = 'section section--margin hero-section';
   hero__section.classList.add(`hero-section--${btn.id}`);

@@ -2,13 +2,14 @@
   display: flex;
   align-items: center;
   &__img {
+    align-self: start;
     flex-shrink: 0;
     width: 377px;
     height: 226px;
     overflow: hidden;
     margin-right: 75px;
     background-color: #333333;
-    animation: headShake; /* referring directly to the animation's @keyframe declaration */
+    animation: slideInLeftTin cubic-bezier(.17,.67,.83,.67); /* referring directly to the animation's @keyframe declaration */
     animation-duration: 1s;
   }
   &__pic {
@@ -19,7 +20,7 @@
   &__description {
     letter-spacing: 0.24px;
     line-height: 27px;
-    animation: headShakeReWers; /* referring directly to the animation's @keyframe declaration */
+    animation: slideInRightTin cubic-bezier(.17,.67,.83,.67); /* referring directly to the animation's @keyframe declaration */
     animation-duration: 1s;
 }
 }

@@ -678,7 +678,7 @@ h3 {
   margin-bottom: 64px;
   position: relative;
   width: 1440px;
-  background: right bottom/50% auto no-repeat url("https://it-events.com/system/event_photos/imgs/000/013/286/original/hero__bg.png");
+  background: right bottom/55% auto no-repeat url("./../assets/img/hero__bg.png");
 }
 
 .hero-section::before {
@@ -691,23 +691,35 @@ h3 {
   height: 8px;
   width: 50%;
   right: 0;
-  bottom: 5px;
+  bottom: 0px;
 }
 
 .hero-section--main {
-  background: bottom -10px right/contain no-repeat url("https://it-events.com/system/attachments/files/000/002/106/original/hero__bg.png");
+  background: right bottom/55% auto no-repeat url("./../assets/img/hero__bg.png");
 }
 
 .hero-section--csgo {
-  background: bottom -10px right -203px/79% no-repeat url("https://it-events.com/system/event_photos/imgs/000/013/289/original/hero__bg--csgo.png");
+  background: right bottom/50% auto no-repeat url("./../assets/img/hero__bg--csgo.png");
+}
+
+.hero-section--csgo::before {
+  background-color: #45bbfe;
 }
 
 .hero-section--dota {
-  background: bottom -10px right 30px/contain no-repeat url("https://it-events.com/system/event_photos/imgs/000/013/288/original/hero__bg--dota.png");
+  background: right bottom/50% auto no-repeat url("https://it-events.com/system/event_photos/imgs/000/013/288/original/hero__bg--dota.png");
+}
+
+.hero-section--dota::before {
+  background-color: #fe4545;
 }
 
 .hero-section--lol {
-  background: bottom -10px right 150px/contain no-repeat url("https://it-events.com/system/event_photos/imgs/000/013/287/original/hero__bg--lol.png");
+  background: right bottom/50% auto no-repeat url("https://it-events.com/system/event_photos/imgs/000/013/287/original/hero__bg--lol.png");
+}
+
+.hero-section--lol::before {
+  background-color: #ff00e5;
 }
 
 .hero__content {
@@ -810,13 +822,14 @@ h3 {
 }
 
 .about__img {
+  align-self: start;
   flex-shrink: 0;
   width: 377px;
   height: 226px;
   overflow: hidden;
   margin-right: 75px;
   background-color: #333333;
-  animation: headShake;
+  animation: slideInLeftTin cubic-bezier(0.17, 0.67, 0.83, 0.67);
   /* referring directly to the animation's @keyframe declaration */
   animation-duration: 1s;
 }
@@ -830,7 +843,7 @@ h3 {
 .about__description {
   letter-spacing: 0.24px;
   line-height: 27px;
-  animation: headShakeReWers;
+  animation: slideInRightTin cubic-bezier(0.17, 0.67, 0.83, 0.67);
   /* referring directly to the animation's @keyframe declaration */
   animation-duration: 1s;
 }
@@ -1719,10 +1732,6 @@ details summary::-webkit-details-marker {
   background-color: #c8c8c8;
 }
 
-.places__item--2nd .prises__item {
-  background-color: #a4a4a4;
-}
-
 .places__item--3nd {
   color: #a05700;
 }
@@ -1733,10 +1742,6 @@ details summary::-webkit-details-marker {
 
 .places__item--3nd .prises::after, .places__item--3nd .prises::before {
   background-color: #A05700;
-}
-
-.places__item--3nd .prises__item {
-  background-color: #8E4D00;
 }
 
 .places__number {
