@@ -1,13 +1,15 @@
 @import "./layouts/normalize";
 @import "./layouts/base";
 @import "./layouts/theme";
+@import "./layouts/animation";
 
 
 @import "./blocks/button";
 @import "./blocks/anchor-place";
 @import "./blocks/menu";
 @import "./blocks/hero";
-@import "./blocks/csgo";
+@import "./blocks/about";
+@import "./blocks/pop-up-about.scss";
 @import "./blocks/format";
 @import "./blocks/additOptions";
 @import "./blocks/subjects";

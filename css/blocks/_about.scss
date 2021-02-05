@@ -1,0 +1,51 @@
+.about {
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+  &__pic {
+    position: relative;
+    align-self: start;
+    flex-shrink: 0;
+    width: 377px;
+    height: 226px;
+    overflow: hidden;
+    margin-right: 75px;
+    background-color: #333333;
+    // animation: slideInLeftTin cubic-bezier(0.17, 0.67, 0.83, 0.67); /* referring directly to the animation's @keyframe declaration */
+    // animation-duration: 1s;
+    transition: 0.5s;
+    // background: center / contain no-repeat url(./../assets/img/video.jpg);
+    &::before {
+      position: absolute;
+      z-index: 10;
+      content: url(./../assets/img/btn__play.svg);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &:hover {
+      &::before {
+        transform: translate(-50%, -50%) scale(1.1);
+      }
+    }
+    &:active {
+      &::before {
+        transform: translate(-50%, -50%) scale(0.9);
+      }
+    }
+  }
+  &__img {
+    height: 100%;
+    width: 100%;
+    // object-fit: contain;
+  }
+  &__description {
+    letter-spacing: 0.24px;
+    line-height: 27px;
+    // animation: slideInRightTin cubic-bezier(0.17, 0.67, 0.83, 0.67); /* referring directly to the animation's @keyframe declaration */
+    // animation-duration: 1s;
+  }
+}
+
+
