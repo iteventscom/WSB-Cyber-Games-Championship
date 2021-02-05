@@ -400,7 +400,7 @@ body--full-screen {
 }
 
 .section {
-  min-width: 1440px;
+  min-width: 1280px;
   position: relative;
 }
 
@@ -628,7 +628,7 @@ h3 {
 
 .menu {
   position: sticky;
-  min-width: 1440px;
+  min-width: 1280px;
   z-index: 100;
   width: 100%;
   top: 0;
@@ -688,7 +688,7 @@ h3 {
   padding-bottom: 44px;
   margin-bottom: 64px;
   position: relative;
-  width: 1440px;
+  width: 1280px;
   background: right bottom/55% auto no-repeat url("./../assets/img/hero__bg.png");
 }
 
