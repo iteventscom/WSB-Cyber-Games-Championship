@@ -448,8 +448,6 @@ h3 {
   letter-spacing: 0.05em;
   line-height: 1;
   margin-bottom: 6px;
-  animation: slideInLeft;
-  /* referring directly to the animation's @keyframe declaration */
   animation-duration: 1s;
 }
 
@@ -728,7 +726,7 @@ h3 {
 }
 
 .hero-section--lol {
-  background: right bottom/50% auto no-repeat url("https://it-events.com/system/event_photos/imgs/000/013/287/original/hero__bg--lol.png");
+  background: right bottom/45% auto no-repeat url("https://it-events.com/system/event_photos/imgs/000/013/287/original/hero__bg--lol.png");
 }
 
 .hero-section--lol::before {
@@ -843,11 +841,8 @@ h3 {
   overflow: hidden;
   margin-right: 75px;
   background-color: #333333;
-  animation: slideInLeftTin cubic-bezier(0.17, 0.67, 0.83, 0.67);
-  /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 1s;
   transition: 0.5s;
-  background: center/contain no-repeat url(./../assets/img/video.png);
+  background: center/contain no-repeat url(./../assets/img/video.jpg);
 }
 
 .about__img::before {
@@ -876,16 +871,18 @@ h3 {
 .about__description {
   letter-spacing: 0.24px;
   line-height: 27px;
-  animation: slideInRightTin cubic-bezier(0.17, 0.67, 0.83, 0.67);
-  /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 1s;
 }
 
 .pop-up-about {
   position: relative;
+  display: none;
+  animation: backInUp;
+  -webkit-animation: backInUp;
+  animation-duration: 0.5s;
 }
 
 .pop-up-about--full-screen {
+  display: block;
   height: 100%;
   width: 100%;
   position: fixed;
@@ -975,6 +972,10 @@ h3 {
   color: #ffffff;
   margin-bottom: 19px;
   margin-bottom: 33px;
+}
+
+.pop-up-about__title::before {
+  background-color: #ffffff;
 }
 
 .format {

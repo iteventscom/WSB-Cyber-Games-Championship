@@ -19,7 +19,7 @@ const body = document.body;
 body.addEventListener('click', (event) => {
   if (event.target === about__img) {
     togglePopUp();
-    playVideo();
+    setTimeout(playVideo, 500);
   }
   if (event.target === about__close__btn) {
     togglePopUp();

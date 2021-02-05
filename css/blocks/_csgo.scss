@@ -12,10 +12,10 @@
     overflow: hidden;
     margin-right: 75px;
     background-color: #333333;
-    animation: slideInLeftTin cubic-bezier(0.17, 0.67, 0.83, 0.67); /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 1s;
+    // animation: slideInLeftTin cubic-bezier(0.17, 0.67, 0.83, 0.67); /* referring directly to the animation's @keyframe declaration */
+    // animation-duration: 1s;
     transition: 0.5s;
-    background: center / contain no-repeat url(./../assets/img/video.png);
+    background: center / contain no-repeat url(./../assets/img/video.jpg);
     &::before {
       position: absolute;
       z-index: 10;
@@ -43,14 +43,24 @@
   &__description {
     letter-spacing: 0.24px;
     line-height: 27px;
-    animation: slideInRightTin cubic-bezier(0.17, 0.67, 0.83, 0.67); /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 1s;
+    // animation: slideInRightTin cubic-bezier(0.17, 0.67, 0.83, 0.67); /* referring directly to the animation's @keyframe declaration */
+    // animation-duration: 1s;
   }
 }
 
 .pop-up-about {
   position: relative;
+  display: none;
+  animation: backInUp;
+  -webkit-animation: backInUp;
+  animation-duration: 0.5s;
+  // transition: cubic-bezier(0.39, 0.575, 0.565, 1);
+  //-webkit-transition: cubic-bezier(0.39, 0.575, 0.565, 1);
+  //-moz-transition: cubic-bezier(0.39, 0.575, 0.565, 1);
+  //-ms-transition: cubic-bezier(0.39, 0.575, 0.565, 1);
+  //-o-transition: cubic-bezier(0.39, 0.575, 0.565, 1);
   &--full-screen {
+    display: block;
     height: 100%;
     width: 100%;
     position: fixed;
@@ -130,5 +140,8 @@
     color: #ffffff;
     margin-bottom: 19px;
     margin-bottom: 33px;
+    &::before {
+      background-color: #ffffff;
+    }
   }
 }
