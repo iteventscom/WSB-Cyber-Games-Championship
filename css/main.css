@@ -387,8 +387,20 @@ body {
   min-width: 100%;
 }
 
+body--full-screen {
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow: hidden;
+}
+
+.body--full-screen {
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow: hidden;
+}
+
 .section {
-  min-width: 1440px;
+  min-width: 1280px;
   position: relative;
 }
 
@@ -399,6 +411,7 @@ body {
 .wrapper {
   width: 1170px;
   margin: 0 auto;
+  height: 100%;
 }
 
 h1 {
@@ -435,8 +448,6 @@ h3 {
   letter-spacing: 0.05em;
   line-height: 1;
   margin-bottom: 6px;
-  animation: slideInLeft;
-  /* referring directly to the animation's @keyframe declaration */
   animation-duration: 1s;
 }
 
@@ -617,7 +628,7 @@ h3 {
 
 .menu {
   position: sticky;
-  min-width: 1440px;
+  min-width: 1280px;
   z-index: 100;
   width: 100%;
   top: 0;
@@ -661,30 +672,93 @@ h3 {
   object-fit: contain;
 }
 
+.hero {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+}
+
 .hero-section {
+  position: relative;
+  height: 100vh;
+  height: calc(95vh - 110px);
+  max-height: 1080px;
   margin: 0 auto;
   margin-top: 44px;
   padding-bottom: 44px;
   margin-bottom: 64px;
   position: relative;
-  width: 1440px;
-  background: bottom -10px right/contain no-repeat url("https://it-events.com/system/event_photos/imgs/000/013/286/original/hero__bg.png");
+  width: 1280px;
+  background: right bottom/55% auto no-repeat url("./../assets/img/hero__bg.png");
+}
+
+.hero-section::before {
+  position: absolute;
+  content: '';
+  transition: 0.5s;
+  z-index: 10;
+  background-color: #93c11a;
+  border-radius: 4px 0 0 4px;
+  height: 8px;
+  width: 50%;
+  right: 0;
+  bottom: 0px;
 }
 
 .hero-section--main {
-  background: bottom -10px right/contain no-repeat url("https://it-events.com/system/attachments/files/000/002/106/original/hero__bg.png");
+  background: right bottom/55% auto no-repeat url("./../assets/img/hero__bg.png");
 }
 
 .hero-section--csgo {
-  background: bottom -10px right -203px/79% no-repeat url("https://it-events.com/system/event_photos/imgs/000/013/289/original/hero__bg--csgo.png");
+  background: right bottom/50% auto no-repeat url("./../assets/img/hero__bg--csgo.png");
+}
+
+.hero-section--csgo::before {
+  background-color: #45bbfe;
 }
 
 .hero-section--dota {
-  background: bottom -10px right 30px/contain no-repeat url("https://it-events.com/system/event_photos/imgs/000/013/288/original/hero__bg--dota.png");
+  background: right bottom/50% auto no-repeat url("https://it-events.com/system/event_photos/imgs/000/013/288/original/hero__bg--dota.png");
+}
+
+.hero-section--dota::before {
+  background-color: #fe4545;
 }
 
 .hero-section--lol {
-  background: bottom -10px right 150px/contain no-repeat url("https://it-events.com/system/event_photos/imgs/000/013/287/original/hero__bg--lol.png");
+  background: right bottom/45% auto no-repeat url("https://it-events.com/system/event_photos/imgs/000/013/287/original/hero__bg--lol.png");
+}
+
+.hero-section--lol::before {
+  background-color: #ff00e5;
+}
+
+.hero__content {
+  width: 50%;
+  margin-left: 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero__bg {
+  width: 50%;
+  display: flex;
+  background: bottom -10px right/contain no-repeat url("https://it-events.com/system/event_photos/imgs/000/013/286/original/hero__bg.png");
+}
+
+.hero__pic {
+  display: flex;
+  align-items: flex-end;
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero__img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 .hero__title {
@@ -725,13 +799,14 @@ h3 {
 }
 
 .hero__line {
+  align-self: flex-end;
   transition: 0.5s;
-  position: absolute;
+  width: 100%;
+  display: block;
   z-index: 10;
   background-color: #93c11a;
   border-radius: 4px 0 0 4px;
   height: 8px;
-  width: 50%;
   right: 0;
   bottom: 0px;
 }
@@ -752,21 +827,39 @@ h3 {
   background-color: #ff00e5;
 }
 
-.about {
+.about__inner {
   display: flex;
   align-items: center;
 }
 
 .about__img {
+  position: relative;
+  align-self: start;
   flex-shrink: 0;
   width: 377px;
   height: 226px;
   overflow: hidden;
   margin-right: 75px;
   background-color: #333333;
-  animation: headShake;
-  /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 1s;
+  transition: 0.5s;
+  background: center/contain no-repeat url(./../assets/img/video.jpg);
+}
+
+.about__img::before {
+  position: absolute;
+  z-index: 10;
+  content: url(./../assets/img/btn__play.svg);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about__img:hover::before {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.about__img:active::before {
+  transform: translate(-50%, -50%) scale(0.9);
 }
 
 .about__pic {
@@ -778,9 +871,111 @@ h3 {
 .about__description {
   letter-spacing: 0.24px;
   line-height: 27px;
-  animation: headShakeReWers;
-  /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 1s;
+}
+
+.pop-up-about {
+  position: relative;
+  display: none;
+  animation: backInUp;
+  -webkit-animation: backInUp;
+  animation-duration: 0.5s;
+}
+
+.pop-up-about--full-screen {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 110;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  min-width: auto;
+}
+
+.pop-up-about--full-screen .wrapper {
+  width: 100%;
+}
+
+.pop-up-about--full-screen .pop-up-about__inner {
+  max-width: 1170px;
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.pop-up-about--full-screen .pop-up-about--full-screen {
+  order: -1;
+  align-self: start;
+  margin-top: 24px;
+  margin-bottom: 18px;
+  color: #ffffff;
+}
+
+.pop-up-about--full-screen .pop-up-about__video {
+  display: block;
+}
+
+.pop-up-about--full-screen .pop-up-about__img {
+  margin-bottom: 34px;
+  margin-top: 100px;
+  margin-right: 0;
+  order: -2;
+  width: 100%;
+  height: 48%;
+}
+
+.pop-up-about--full-screen .pop-up-about__description {
+  font-weight: normal;
+}
+
+.pop-up-about--full-screen .pop-up-about__close-btn {
+  display: none;
+  position: absolute;
+  right: 50px;
+  top: 60px;
+  height: 38px;
+  width: 38px;
+  transition: 0.5s;
+}
+
+.pop-up-about--full-screen .pop-up-about__close-btn:hover {
+  transform: scale(1.2);
+}
+
+.pop-up-about--full-screen .pop-up-about__close-btn:active {
+  transform: scale(0.9);
+}
+
+.pop-up-about--full-screen .pop-up-about__close-btn::after, .pop-up-about--full-screen .pop-up-about__close-btn::before {
+  top: 0;
+  right: 50%;
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 3px;
+  background-color: #93c11a;
+  transform: rotate(45deg);
+}
+
+.pop-up-about--full-screen .pop-up-about__close-btn::before {
+  transform: rotate(-45deg);
+}
+
+.pop-up-about--full-screen .pop-up-about__close-btn--full-screen {
+  display: block;
+}
+
+.pop-up-about__title {
+  color: #ffffff;
+  margin-bottom: 19px;
+  margin-bottom: 33px;
+}
+
+.pop-up-about__title::before {
+  background-color: #ffffff;
 }
 
 .format {
@@ -1667,10 +1862,6 @@ details summary::-webkit-details-marker {
   background-color: #c8c8c8;
 }
 
-.places__item--2nd .prises__item {
-  background-color: #a4a4a4;
-}
-
 .places__item--3nd {
   color: #a05700;
 }
@@ -1681,10 +1872,6 @@ details summary::-webkit-details-marker {
 
 .places__item--3nd .prises::after, .places__item--3nd .prises::before {
   background-color: #A05700;
-}
-
-.places__item--3nd .prises__item {
-  background-color: #8E4D00;
 }
 
 .places__number {

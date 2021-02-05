@@ -45,9 +45,23 @@ body {
   background-color: #191919;
   color: #ffffff;
   min-width: 100%;
+
+  &--full-screen {
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
+  }
+}
+
+.body {
+  &--full-screen {
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
+  }
 }
 .section {
-  min-width: 1440px;
+  min-width: 1280px;
   position: relative;
   &--margin {
     margin-bottom: 170px;
@@ -57,6 +71,7 @@ body {
 .wrapper {
   width: 1170px;
   margin: 0 auto;
+  height: 100%;
 }
 
 h1 {
