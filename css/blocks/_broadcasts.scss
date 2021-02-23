@@ -1,0 +1,112 @@
+.broadcasts {
+  display: flex;
+  &__main-slide {
+    height: 430px;
+    width: 65%;
+    border: 3px solid $yellow;
+    margin-right: 20px;
+  }
+  &__arrow {
+    transition: 0.5s;
+    display: block;
+    height: 34px;
+    width: 16px;
+    margin-left: 76px;
+    background-size: contain;
+    background-image: url(../../assets/img/broadcasts__arow.svg);
+    margin-bottom: 14px;
+
+    &--down {
+      background-image: url(../../assets/img/broadcasts__arow--down.svg);
+      margin-bottom: 0;
+      margin-top: 14px;
+    }
+    &:hover {
+      transform: scale(1.2);
+    }
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+  &-slider {
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 332px;
+      overflow: hidden;
+      padding: 4px;
+    }
+    &__link {
+      display: flex;
+    }
+    &__item {
+      display: flex;
+      margin-bottom: 20px;
+
+      &:hover {
+        cursor: pointer;
+        & .broadcasts-slider__item-pic {
+          box-shadow: 0 0 4px 0 #ff0;
+        }
+      }
+      &:nth-child(2) {
+        & .broadcasts-slider__item-pic {
+          box-shadow: 0 0 4px 0 #ff0;
+        }
+      }
+      &:active {
+        cursor: pointer;
+        & .broadcasts-slider__item-pic {
+          box-shadow: 0 0 4px 0 #ff0;
+        }
+      }
+      &-pic {
+        display: block;
+        border: 3px solid $yellow;
+        width: 172px;
+        height: 95px;
+        overflow: hidden;
+        margin-right: 20px;
+        flex-shrink: 0;
+
+        // &--active {
+        //   box-shadow: 0 0 10px 0 #ff0;
+        // }
+      }
+      &-img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+      }
+
+      &-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      &-title {
+        font-size: 18px;
+        color: $green;
+        &--dota {
+          color: $dota;
+        }
+        &--csgo {
+          color: $csgo;
+        }
+        &--lol {
+          color: $lol;
+        }
+      }
+      &-subtitle {
+        font-size: 14px;
+      }
+    }
+  }
+}

@@ -3714,6 +3714,131 @@ details summary::-webkit-details-marker {
   color: #fe4545;
 }
 
+.broadcasts {
+  display: flex;
+}
+
+.broadcasts__main-slide {
+  height: 430px;
+  width: 65%;
+  border: 3px solid #ffff00;
+  margin-right: 20px;
+}
+
+.broadcasts__arrow {
+  transition: 0.5s;
+  display: block;
+  height: 34px;
+  width: 16px;
+  margin-left: 76px;
+  background-size: contain;
+  background-image: url(../../assets/img/broadcasts__arow.svg);
+  margin-bottom: 14px;
+}
+
+.broadcasts__arrow--down {
+  background-image: url(../../assets/img/broadcasts__arow--down.svg);
+  margin-bottom: 0;
+  margin-top: 14px;
+}
+
+.broadcasts__arrow:hover {
+  transform: scale(1.2);
+}
+
+.broadcasts__arrow:active {
+  transform: scale(0.9);
+}
+
+.broadcasts-slider {
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+}
+
+.broadcasts-slider__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 332px;
+  overflow: hidden;
+  padding: 4px;
+}
+
+.broadcasts-slider__link {
+  display: flex;
+}
+
+.broadcasts-slider__item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.broadcasts-slider__item:hover {
+  cursor: pointer;
+}
+
+.broadcasts-slider__item:hover .broadcasts-slider__item-pic {
+  box-shadow: 0 0 4px 0 #ff0;
+}
+
+.broadcasts-slider__item:nth-child(2) .broadcasts-slider__item-pic {
+  box-shadow: 0 0 4px 0 #ff0;
+}
+
+.broadcasts-slider__item:active {
+  cursor: pointer;
+}
+
+.broadcasts-slider__item:active .broadcasts-slider__item-pic {
+  box-shadow: 0 0 4px 0 #ff0;
+}
+
+.broadcasts-slider__item-pic {
+  display: block;
+  border: 3px solid #ffff00;
+  width: 172px;
+  height: 95px;
+  overflow: hidden;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.broadcasts-slider__item-img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.broadcasts-slider__item-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.broadcasts-slider__item-title {
+  font-size: 18px;
+  color: #93c11a;
+}
+
+.broadcasts-slider__item-title--dota {
+  color: #fe4545;
+}
+
+.broadcasts-slider__item-title--csgo {
+  color: #45bbfe;
+}
+
+.broadcasts-slider__item-title--lol {
+  color: #ff00e5;
+}
+
+.broadcasts-slider__item-subtitle {
+  font-size: 14px;
+}
+
 .comand-terms {
   counter-reset: num;
 }
