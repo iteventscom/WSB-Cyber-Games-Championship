@@ -2654,7 +2654,7 @@ h3 {
 .hero__pic {
   display: flex;
   align-items: flex-end;
-  height: 80%;
+  height: 70%;
   width: 100%;
   overflow: hidden;
   position: relative;
