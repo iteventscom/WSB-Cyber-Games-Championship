@@ -9,7 +9,7 @@ const subject__section = document.querySelector('#subjects').closest('section');
 const addit__options = document.querySelectorAll('.addit-options__item');
 
 const about__inner = document.querySelector('.about__inner');
-const about__img = document.querySelector('.about__img');
+const aboutPic = document.querySelector('.about__pic');
 const about__title = document.querySelector('.about__title');
 
 const about__close__btn = document.querySelector('.pop-up-about__close-btn');
@@ -18,10 +18,10 @@ const pop_up_about = document.querySelector('.pop-up-about');
 const body = document.body;
 
 if (window.innerHeight > window.innerWidth) {
-  heroSection.classList.add('hero-section--width')
+  heroSection.classList.add('hero-section--width');
 }
 body.addEventListener('click', (event) => {
-  if (event.target === about__img) {
+  if (event.target.closest('.about__pic') === aboutPic) {
     togglePopUp();
     setTimeout(playVideo, 500);
   }
