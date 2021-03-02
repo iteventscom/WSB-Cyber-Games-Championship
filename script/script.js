@@ -32,7 +32,7 @@ body.addEventListener('click', (event) => {
 });
 
 body.addEventListener('keydown', (event) => {
-  console.log(event.key);
+  // console.log(event.key);
   if (
     event.key === ('Escape' || 'Esc') &&
     pop_up_about.classList.contains('pop-up-about--full-screen')

@@ -26,7 +26,7 @@ function onYouTubeIframeAPIReady() {
 }
 
 function insertBroadcstVideo(videoLink) {
-  console.log(videoLink);
+  // console.log(videoLink);
   broadcastplayer = new YT.Player('broadcastplayer', {
     height: '100%',
     width: '100%',
@@ -38,7 +38,7 @@ function insertBroadcstVideo(videoLink) {
     playerVars: { rel: 0, showinfo: 0 },
   });
 
-  console.log(broadcastplayer.i.i.videoId);
+  // console.log(broadcastplayer.i.i.videoId);
 }
 
 // 4. The API will call this function when the video player is ready.
