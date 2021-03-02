@@ -1,5 +1,6 @@
 const hero__btns = document.querySelector('.hero__btns');
-const hero__section = document.querySelector('.hero-section');
+const hero__pic = document.querySelector('.hero__pic');
+const heroSection = document.querySelector('.hero-section');
 const section__titles = document.querySelectorAll('.section__title');
 const buttons = document.querySelectorAll('.button');
 const format__items = document.querySelectorAll('.format__item');
@@ -16,6 +17,9 @@ const pop_up__img = document.querySelector('.pop-up-about__img');
 const pop_up_about = document.querySelector('.pop-up-about');
 const body = document.body;
 
+if (window.innerHeight > window.innerWidth) {
+  heroSection.classList.add('hero-section--width')
+}
 body.addEventListener('click', (event) => {
   if (event.target === about__img) {
     togglePopUp();
@@ -63,8 +67,8 @@ function changeBtn(btn) {
   // hero__line.className = 'hero__line';
   // hero__line.classList.add(`hero__line--${btn.id}`);
 
-  hero__section.className = 'section section--margin hero-section';
-  hero__section.classList.add(`hero-section--${btn.id}`);
+  hero__pic.className = 'hero__pic';
+  hero__pic.classList.add(`hero__pic--${btn.id}`);
 
   section__titles.forEach((element) => {
     element.classList.remove(`section__title--${prevTheme}`);

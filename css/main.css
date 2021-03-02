@@ -2626,55 +2626,16 @@ h3 {
   position: relative;
   height: 100vh;
   height: calc(95vh - 110px);
-  max-height: 1080px;
   margin: 0 auto;
   margin-top: 44px;
   padding-bottom: 44px;
   margin-bottom: 64px;
   position: relative;
   width: 1280px;
-  background: right bottom/55% auto no-repeat url("./../assets/img/hero__bg.png");
 }
 
-.hero-section::before {
-  position: absolute;
-  content: '';
-  transition: 0.5s;
-  z-index: 10;
-  background-color: #93c11a;
-  border-radius: 4px 0 0 4px;
-  height: 8px;
-  width: 50%;
-  right: 0;
-  bottom: 0px;
-}
-
-.hero-section--main {
-  background: right bottom/55% auto no-repeat url("./../assets/img/hero__bg.png");
-}
-
-.hero-section--csgo {
-  background: right bottom/50% auto no-repeat url("./../assets/img/hero__bg--csgo.png");
-}
-
-.hero-section--csgo::before {
-  background-color: #45bbfe;
-}
-
-.hero-section--dota {
-  background: right bottom/50% auto no-repeat url("https://it-events.com/system/event_photos/imgs/000/013/288/original/hero__bg--dota.png");
-}
-
-.hero-section--dota::before {
-  background-color: #fe4545;
-}
-
-.hero-section--lol {
-  background: right bottom/45% auto no-repeat url("https://it-events.com/system/event_photos/imgs/000/013/287/original/hero__bg--lol.png");
-}
-
-.hero-section--lol::before {
-  background-color: #ff00e5;
+.hero-section--width {
+  height: 696px;
 }
 
 .hero__content {
@@ -2688,21 +2649,58 @@ h3 {
 .hero__bg {
   width: 50%;
   display: flex;
-  background: bottom -10px right/contain no-repeat url("https://it-events.com/system/event_photos/imgs/000/013/286/original/hero__bg.png");
 }
 
 .hero__pic {
   display: flex;
   align-items: flex-end;
-  height: 50%;
+  height: 68%;
   width: 100%;
   overflow: hidden;
+  position: relative;
+  padding-bottom: 8px;
+  background: center/contain no-repeat url("./../assets/img/hero__bg.png");
+  align-self: center;
 }
 
-.hero__img {
-  height: 100%;
+.hero__pic::before {
+  position: absolute;
+  content: '';
+  z-index: 10;
+  background-color: #93c11a;
+  border-radius: 4px 0 0 4px;
+  height: 8px;
   width: 100%;
-  object-fit: contain;
+  right: 0;
+  bottom: 0px;
+}
+
+.hero__pic--main {
+  background: center/contain no-repeat url("./../assets/img/hero__bg.png");
+}
+
+.hero__pic--csgo {
+  background: center/contain no-repeat url("./../assets/img/hero__bg--csgo.png");
+}
+
+.hero__pic--csgo::before {
+  background-color: #45bbfe;
+}
+
+.hero__pic--dota {
+  background: center/contain no-repeat url("https://it-events.com/system/event_photos/imgs/000/013/288/original/hero__bg--dota.png");
+}
+
+.hero__pic--dota::before {
+  background-color: #fe4545;
+}
+
+.hero__pic--lol {
+  background: center/contain no-repeat url("https://it-events.com/system/event_photos/imgs/000/013/287/original/hero__bg--lol.png");
+}
+
+.hero__pic--lol::before {
+  background-color: #ff00e5;
 }
 
 .hero__title {
