@@ -3714,10 +3714,11 @@ details summary::-webkit-details-marker {
 
 .broadcasts {
   display: flex;
+  align-items: center;
 }
 
 .broadcasts__main-slide {
-  height: 430px;
+  height: 386px;
   width: 65%;
   border: 3px solid #ffff00;
   margin-right: 20px;
@@ -3726,18 +3727,18 @@ details summary::-webkit-details-marker {
 .broadcasts__arrow {
   transition: 0.5s;
   display: block;
-  height: 34px;
+  height: 30px;
   width: 16px;
   margin-left: 76px;
   background-size: contain;
-  background-image: url(../assets/img/broadcasts__arow.svg);
-  margin-bottom: 14px;
+  background: no-repeat url(../assets/img/broadcasts__arow.svg);
+  margin-bottom: 8px;
 }
 
 .broadcasts__arrow--down {
-  background-image: url(../assets/img/broadcasts__arow--down.svg);
+  background: bottom no-repeat url(../assets/img/broadcasts__arow--down.svg);
   margin-bottom: 0;
-  margin-top: 14px;
+  margin-top: 8px;
 }
 
 .broadcasts__arrow:hover {
@@ -3758,7 +3759,7 @@ details summary::-webkit-details-marker {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 332px;
+  height: 310px;
   overflow: hidden;
   padding: 4px;
 }
@@ -3769,7 +3770,7 @@ details summary::-webkit-details-marker {
 
 .broadcasts-slider__item {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .broadcasts-slider__item:hover {

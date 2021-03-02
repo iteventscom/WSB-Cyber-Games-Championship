@@ -1,7 +1,8 @@
 .broadcasts {
   display: flex;
+  align-items: center;
   &__main-slide {
-    height: 430px;
+    height: 386px;
     width: 65%;
     border: 3px solid $yellow;
     margin-right: 20px;
@@ -9,17 +10,17 @@
   &__arrow {
     transition: 0.5s;
     display: block;
-    height: 34px;
+    height: 30px;
     width: 16px;
     margin-left: 76px;
     background-size: contain;
-    background-image: url(../assets/img/broadcasts__arow.svg);
-    margin-bottom: 14px;
+    background:no-repeat  url(../assets/img/broadcasts__arow.svg);
+    margin-bottom: 8px;
 
     &--down {
-      background-image: url(../assets/img/broadcasts__arow--down.svg);
+      background:bottom no-repeat url(../assets/img/broadcasts__arow--down.svg);
       margin-bottom: 0;
-      margin-top: 14px;
+      margin-top: 8px;
     }
     &:hover {
       transform: scale(1.2);
@@ -37,7 +38,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      height: 332px;
+      height: 310px;
       overflow: hidden;
       padding: 4px;
     }
@@ -46,7 +47,7 @@
     }
     &__item {
       display: flex;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
 
       &:hover {
         cursor: pointer;

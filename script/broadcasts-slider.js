@@ -16,12 +16,11 @@ slider.addEventListener('click', (event) => {
       videoLink = slides.children[1].firstElementChild.getAttribute('adr');
       broadcastplayer.loadVideoById(videoLink);
     } else if (event.target.closest('.broadcasts-slider__item')) {
-      console.log(slides.children[1]);
+      // console.log(slides.children[1]);
       if (slides.children[1] !== event.target.closest('.broadcasts-slider__item')) {
         videoLink = event.target.closest('.broadcasts-slider__link').getAttribute('adr');
         broadcastplayer.loadVideoById(videoLink);
-        
-      slides.prepend(slides.lastElementChild);
+        slides.prepend(slides.lastElementChild);
       }
     }
   }
