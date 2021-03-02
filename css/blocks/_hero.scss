@@ -16,34 +16,7 @@
     &--width {
       height: 696px;
     }
-    // background: right bottom / 55% auto no-repeat
-    // url('./../assets/img/hero__bg.png');
-
-    // &--main {
-    //   background: right bottom / 55% auto no-repeat
-    //     url('./../assets/img/hero__bg.png');
-    // }
-    // &--csgo {
-    //   background: right bottom / 50% auto no-repeat url('./../assets/img/hero__bg--csgo.png');
-    //   &::before {
-    //     background-color: $csgo;
-    //     // bottom: -3px;
-    //   }
-    // }
-    // &--dota {
-    //   background: right bottom / 50% auto no-repeat
-    //     url('https://it-events.com/system/event_photos/imgs/000/013/288/original/hero__bg--dota.png');
-    //     &::before {
-    //       background-color: $dota;
-    //     }
-    // }
-    // &--lol {
-    //   background: right bottom / 45% auto no-repeat
-    //     url('https://it-events.com/system/event_photos/imgs/000/013/287/original/hero__bg--lol.png');
-    //     &::before {
-    //       background-color: $lol;
-    //     }
-    // }
+    
   }
   &__content {
     width: 50%;
@@ -55,7 +28,6 @@
   &__bg {
     width: 50%;
     display: flex;
-    // background: bottom -10px right / contain no-repeat url('https://it-events.com/system/event_photos/imgs/000/013/286/original/hero__bg.png');
   }
   &__pic {
     display: flex;
@@ -103,11 +75,6 @@
       }
     }
   }
-  // &__img {
-  //   height: 100%;
-  //   width: 100%;
-  //   object-fit: contain;
-  // }
   &__title {
     font-weight: bold;
     font-size: 49px;
@@ -144,12 +111,10 @@
     transition: 0.5s;
     width: 100%;
     display: block;
-    // position: absolute;
     z-index: 10;
     background-color: $green;
     border-radius: 4px 0 0 4px;
     height: 8px;
-    // width: 50%;
     right: 0;
     bottom: 0px;
     &--main {
